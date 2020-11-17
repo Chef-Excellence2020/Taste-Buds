@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		52738ACB2B48A0A36C8B8BE5 /* Pods_Taste_BudsTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B119FA2781240A71F7BA111 /* Pods_Taste_BudsTests.framework */; };
 		62AF032C2564476200535D3B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62AF032B2564476200535D3B /* AppDelegate.swift */; };
 		62AF032E2564476200535D3B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62AF032D2564476200535D3B /* SceneDelegate.swift */; };
 		62AF03302564476200535D3B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62AF032F2564476200535D3B /* ViewController.swift */; };
@@ -15,6 +16,8 @@
 		62AF03382564476300535D3B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 62AF03362564476300535D3B /* LaunchScreen.storyboard */; };
 		62AF03432564476400535D3B /* Taste_BudsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62AF03422564476400535D3B /* Taste_BudsTests.swift */; };
 		62AF034E2564476400535D3B /* Taste_BudsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62AF034D2564476400535D3B /* Taste_BudsUITests.swift */; };
+		D66BE8E90A963B7BAD68F610 /* Pods_Taste_Buds_Taste_BudsUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF53DF169D904BCD58C5D988 /* Pods_Taste_Buds_Taste_BudsUITests.framework */; };
+		DC19CFF4E97E21FE27F3ACEA /* Pods_Taste_Buds.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBEA8583F939ED2EC82E0B38 /* Pods_Taste_Buds.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +38,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		06D85452AE98016E375A7F4C /* Pods-Taste-Buds.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Taste-Buds.release.xcconfig"; path = "Target Support Files/Pods-Taste-Buds/Pods-Taste-Buds.release.xcconfig"; sourceTree = "<group>"; };
+		2B119FA2781240A71F7BA111 /* Pods_Taste_BudsTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Taste_BudsTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		341A87FA9F9970A46146F5F8 /* Pods-Taste-BudsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Taste-BudsTests.debug.xcconfig"; path = "Target Support Files/Pods-Taste-BudsTests/Pods-Taste-BudsTests.debug.xcconfig"; sourceTree = "<group>"; };
+		536A606D469F807B70BB22B1 /* Pods-Taste-Buds-Taste-BudsUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Taste-Buds-Taste-BudsUITests.debug.xcconfig"; path = "Target Support Files/Pods-Taste-Buds-Taste-BudsUITests/Pods-Taste-Buds-Taste-BudsUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		62AF03282564476200535D3B /* Taste-Buds.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Taste-Buds.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		62AF032B2564476200535D3B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		62AF032D2564476200535D3B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -49,6 +56,11 @@
 		62AF03492564476400535D3B /* Taste-BudsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Taste-BudsUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		62AF034D2564476400535D3B /* Taste_BudsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Taste_BudsUITests.swift; sourceTree = "<group>"; };
 		62AF034F2564476400535D3B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9D19E5E7B648C5AB7439F90C /* Pods-Taste-BudsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Taste-BudsTests.release.xcconfig"; path = "Target Support Files/Pods-Taste-BudsTests/Pods-Taste-BudsTests.release.xcconfig"; sourceTree = "<group>"; };
+		BF53DF169D904BCD58C5D988 /* Pods_Taste_Buds_Taste_BudsUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Taste_Buds_Taste_BudsUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CBCE94FE080B126FA522363F /* Pods-Taste-Buds-Taste-BudsUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Taste-Buds-Taste-BudsUITests.release.xcconfig"; path = "Target Support Files/Pods-Taste-Buds-Taste-BudsUITests/Pods-Taste-Buds-Taste-BudsUITests.release.xcconfig"; sourceTree = "<group>"; };
+		CBEA8583F939ED2EC82E0B38 /* Pods_Taste_Buds.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Taste_Buds.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EA5C1B5C07043CBA384C1658 /* Pods-Taste-Buds.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Taste-Buds.debug.xcconfig"; path = "Target Support Files/Pods-Taste-Buds/Pods-Taste-Buds.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +68,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DC19CFF4E97E21FE27F3ACEA /* Pods_Taste_Buds.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +76,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				52738ACB2B48A0A36C8B8BE5 /* Pods_Taste_BudsTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,6 +84,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D66BE8E90A963B7BAD68F610 /* Pods_Taste_Buds_Taste_BudsUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +98,8 @@
 				62AF03412564476400535D3B /* Taste-BudsTests */,
 				62AF034C2564476400535D3B /* Taste-BudsUITests */,
 				62AF03292564476200535D3B /* Products */,
+				83A33DAEE7368704D4D28CA0 /* Pods */,
+				98A464A378844A54D377229F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -128,6 +145,30 @@
 			path = "Taste-BudsUITests";
 			sourceTree = "<group>";
 		};
+		83A33DAEE7368704D4D28CA0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EA5C1B5C07043CBA384C1658 /* Pods-Taste-Buds.debug.xcconfig */,
+				06D85452AE98016E375A7F4C /* Pods-Taste-Buds.release.xcconfig */,
+				536A606D469F807B70BB22B1 /* Pods-Taste-Buds-Taste-BudsUITests.debug.xcconfig */,
+				CBCE94FE080B126FA522363F /* Pods-Taste-Buds-Taste-BudsUITests.release.xcconfig */,
+				341A87FA9F9970A46146F5F8 /* Pods-Taste-BudsTests.debug.xcconfig */,
+				9D19E5E7B648C5AB7439F90C /* Pods-Taste-BudsTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		98A464A378844A54D377229F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CBEA8583F939ED2EC82E0B38 /* Pods_Taste_Buds.framework */,
+				BF53DF169D904BCD58C5D988 /* Pods_Taste_Buds_Taste_BudsUITests.framework */,
+				2B119FA2781240A71F7BA111 /* Pods_Taste_BudsTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,9 +176,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 62AF03522564476400535D3B /* Build configuration list for PBXNativeTarget "Taste-Buds" */;
 			buildPhases = (
+				95AB308DE095006A14B29627 /* [CP] Check Pods Manifest.lock */,
 				62AF03242564476200535D3B /* Sources */,
 				62AF03252564476200535D3B /* Frameworks */,
 				62AF03262564476200535D3B /* Resources */,
+				B93981C54F39DA64C934E5B8 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -152,6 +195,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 62AF03552564476400535D3B /* Build configuration list for PBXNativeTarget "Taste-BudsTests" */;
 			buildPhases = (
+				BC02134B41BBC8E2D13FC8AC /* [CP] Check Pods Manifest.lock */,
 				62AF033A2564476300535D3B /* Sources */,
 				62AF033B2564476300535D3B /* Frameworks */,
 				62AF033C2564476300535D3B /* Resources */,
@@ -170,9 +214,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 62AF03582564476400535D3B /* Build configuration list for PBXNativeTarget "Taste-BudsUITests" */;
 			buildPhases = (
+				50ECC05AAB091FB38644F683 /* [CP] Check Pods Manifest.lock */,
 				62AF03452564476400535D3B /* Sources */,
 				62AF03462564476400535D3B /* Frameworks */,
 				62AF03472564476400535D3B /* Resources */,
+				8F2EABA091B6C2F99145EBCC /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -252,6 +298,109 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		50ECC05AAB091FB38644F683 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Taste-Buds-Taste-BudsUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8F2EABA091B6C2F99145EBCC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Taste-Buds-Taste-BudsUITests/Pods-Taste-Buds-Taste-BudsUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Taste-Buds-Taste-BudsUITests/Pods-Taste-Buds-Taste-BudsUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Taste-Buds-Taste-BudsUITests/Pods-Taste-Buds-Taste-BudsUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		95AB308DE095006A14B29627 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Taste-Buds-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B93981C54F39DA64C934E5B8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Taste-Buds/Pods-Taste-Buds-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Taste-Buds/Pods-Taste-Buds-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Taste-Buds/Pods-Taste-Buds-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BC02134B41BBC8E2D13FC8AC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Taste-BudsTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		62AF03242564476200535D3B /* Sources */ = {
@@ -433,6 +582,7 @@
 		};
 		62AF03532564476400535D3B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EA5C1B5C07043CBA384C1658 /* Pods-Taste-Buds.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -452,6 +602,7 @@
 		};
 		62AF03542564476400535D3B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 06D85452AE98016E375A7F4C /* Pods-Taste-Buds.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -471,6 +622,7 @@
 		};
 		62AF03562564476400535D3B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 341A87FA9F9970A46146F5F8 /* Pods-Taste-BudsTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -493,6 +645,7 @@
 		};
 		62AF03572564476400535D3B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9D19E5E7B648C5AB7439F90C /* Pods-Taste-BudsTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -515,6 +668,7 @@
 		};
 		62AF03592564476400535D3B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 536A606D469F807B70BB22B1 /* Pods-Taste-Buds-Taste-BudsUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -535,6 +689,7 @@
 		};
 		62AF035A2564476400535D3B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CBCE94FE080B126FA522363F /* Pods-Taste-Buds-Taste-BudsUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

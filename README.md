@@ -67,13 +67,9 @@ A recipe app that focuses on collaborative creation. Users can suggest alternati
 * Settings -> Toggle settings
 
 ## Wireframes
-[FIXME: Add wireframe]
-<img src="https://i.imgur.com/9CrjH1K.jpg" width=800><br>
-
-### [BONUS] Digital Wireframes & Mockups
-[FIXME: optional for extra credits]
-<img src="https://i.imgur.com/lYHn37F.jpg" height=200>
+<img src="https://github.com/Chef-Excellence2020/Taste-Buds/blob/main/Assets/WireframeA.png" width=800><br>
+<img src="https://github.com/Chef-Excellence2020/Taste-Buds/blob/main/Assets/WireframeB.png" width=800><br>
 
 ### [BONUS] Interactive Prototype
-[FIXME: optional for extra credits]
-<img src="https://i.imgur.com/AiKfE5g.gif" width=200>
+<img src="https://github.com/Chef-Excellence2020/Taste-Buds/blob/main/Assets/WireframeGIF.gif" width=200>
+GIFs created with [ezgif](https://ezgif.com/).

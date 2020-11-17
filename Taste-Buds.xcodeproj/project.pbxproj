@@ -1,0 +1,598 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		62AF032C2564476200535D3B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62AF032B2564476200535D3B /* AppDelegate.swift */; };
+		62AF032E2564476200535D3B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62AF032D2564476200535D3B /* SceneDelegate.swift */; };
+		62AF03302564476200535D3B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62AF032F2564476200535D3B /* ViewController.swift */; };
+		62AF03332564476200535D3B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 62AF03312564476200535D3B /* Main.storyboard */; };
+		62AF03352564476300535D3B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 62AF03342564476300535D3B /* Assets.xcassets */; };
+		62AF03382564476300535D3B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 62AF03362564476300535D3B /* LaunchScreen.storyboard */; };
+		62AF03432564476400535D3B /* Taste_BudsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62AF03422564476400535D3B /* Taste_BudsTests.swift */; };
+		62AF034E2564476400535D3B /* Taste_BudsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62AF034D2564476400535D3B /* Taste_BudsUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		62AF033F2564476300535D3B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 62AF03202564476200535D3B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 62AF03272564476200535D3B;
+			remoteInfo = "Taste-Buds";
+		};
+		62AF034A2564476400535D3B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 62AF03202564476200535D3B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 62AF03272564476200535D3B;
+			remoteInfo = "Taste-Buds";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		62AF03282564476200535D3B /* Taste-Buds.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Taste-Buds.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		62AF032B2564476200535D3B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		62AF032D2564476200535D3B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		62AF032F2564476200535D3B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		62AF03322564476200535D3B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		62AF03342564476300535D3B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		62AF03372564476300535D3B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		62AF03392564476300535D3B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		62AF033E2564476300535D3B /* Taste-BudsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Taste-BudsTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		62AF03422564476400535D3B /* Taste_BudsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Taste_BudsTests.swift; sourceTree = "<group>"; };
+		62AF03442564476400535D3B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		62AF03492564476400535D3B /* Taste-BudsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Taste-BudsUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		62AF034D2564476400535D3B /* Taste_BudsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Taste_BudsUITests.swift; sourceTree = "<group>"; };
+		62AF034F2564476400535D3B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		62AF03252564476200535D3B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		62AF033B2564476300535D3B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		62AF03462564476400535D3B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		62AF031F2564476200535D3B = {
+			isa = PBXGroup;
+			children = (
+				62AF032A2564476200535D3B /* Taste-Buds */,
+				62AF03412564476400535D3B /* Taste-BudsTests */,
+				62AF034C2564476400535D3B /* Taste-BudsUITests */,
+				62AF03292564476200535D3B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		62AF03292564476200535D3B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				62AF03282564476200535D3B /* Taste-Buds.app */,
+				62AF033E2564476300535D3B /* Taste-BudsTests.xctest */,
+				62AF03492564476400535D3B /* Taste-BudsUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		62AF032A2564476200535D3B /* Taste-Buds */ = {
+			isa = PBXGroup;
+			children = (
+				62AF032B2564476200535D3B /* AppDelegate.swift */,
+				62AF032D2564476200535D3B /* SceneDelegate.swift */,
+				62AF032F2564476200535D3B /* ViewController.swift */,
+				62AF03312564476200535D3B /* Main.storyboard */,
+				62AF03342564476300535D3B /* Assets.xcassets */,
+				62AF03362564476300535D3B /* LaunchScreen.storyboard */,
+				62AF03392564476300535D3B /* Info.plist */,
+			);
+			path = "Taste-Buds";
+			sourceTree = "<group>";
+		};
+		62AF03412564476400535D3B /* Taste-BudsTests */ = {
+			isa = PBXGroup;
+			children = (
+				62AF03422564476400535D3B /* Taste_BudsTests.swift */,
+				62AF03442564476400535D3B /* Info.plist */,
+			);
+			path = "Taste-BudsTests";
+			sourceTree = "<group>";
+		};
+		62AF034C2564476400535D3B /* Taste-BudsUITests */ = {
+			isa = PBXGroup;
+			children = (
+				62AF034D2564476400535D3B /* Taste_BudsUITests.swift */,
+				62AF034F2564476400535D3B /* Info.plist */,
+			);
+			path = "Taste-BudsUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		62AF03272564476200535D3B /* Taste-Buds */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 62AF03522564476400535D3B /* Build configuration list for PBXNativeTarget "Taste-Buds" */;
+			buildPhases = (
+				62AF03242564476200535D3B /* Sources */,
+				62AF03252564476200535D3B /* Frameworks */,
+				62AF03262564476200535D3B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Taste-Buds";
+			productName = "Taste-Buds";
+			productReference = 62AF03282564476200535D3B /* Taste-Buds.app */;
+			productType = "com.apple.product-type.application";
+		};
+		62AF033D2564476300535D3B /* Taste-BudsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 62AF03552564476400535D3B /* Build configuration list for PBXNativeTarget "Taste-BudsTests" */;
+			buildPhases = (
+				62AF033A2564476300535D3B /* Sources */,
+				62AF033B2564476300535D3B /* Frameworks */,
+				62AF033C2564476300535D3B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				62AF03402564476300535D3B /* PBXTargetDependency */,
+			);
+			name = "Taste-BudsTests";
+			productName = "Taste-BudsTests";
+			productReference = 62AF033E2564476300535D3B /* Taste-BudsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		62AF03482564476400535D3B /* Taste-BudsUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 62AF03582564476400535D3B /* Build configuration list for PBXNativeTarget "Taste-BudsUITests" */;
+			buildPhases = (
+				62AF03452564476400535D3B /* Sources */,
+				62AF03462564476400535D3B /* Frameworks */,
+				62AF03472564476400535D3B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				62AF034B2564476400535D3B /* PBXTargetDependency */,
+			);
+			name = "Taste-BudsUITests";
+			productName = "Taste-BudsUITests";
+			productReference = 62AF03492564476400535D3B /* Taste-BudsUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		62AF03202564476200535D3B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1210;
+				LastUpgradeCheck = 1210;
+				TargetAttributes = {
+					62AF03272564476200535D3B = {
+						CreatedOnToolsVersion = 12.1;
+					};
+					62AF033D2564476300535D3B = {
+						CreatedOnToolsVersion = 12.1;
+						TestTargetID = 62AF03272564476200535D3B;
+					};
+					62AF03482564476400535D3B = {
+						CreatedOnToolsVersion = 12.1;
+						TestTargetID = 62AF03272564476200535D3B;
+					};
+				};
+			};
+			buildConfigurationList = 62AF03232564476200535D3B /* Build configuration list for PBXProject "Taste-Buds" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 62AF031F2564476200535D3B;
+			productRefGroup = 62AF03292564476200535D3B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				62AF03272564476200535D3B /* Taste-Buds */,
+				62AF033D2564476300535D3B /* Taste-BudsTests */,
+				62AF03482564476400535D3B /* Taste-BudsUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		62AF03262564476200535D3B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				62AF03382564476300535D3B /* LaunchScreen.storyboard in Resources */,
+				62AF03352564476300535D3B /* Assets.xcassets in Resources */,
+				62AF03332564476200535D3B /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		62AF033C2564476300535D3B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		62AF03472564476400535D3B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		62AF03242564476200535D3B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				62AF03302564476200535D3B /* ViewController.swift in Sources */,
+				62AF032C2564476200535D3B /* AppDelegate.swift in Sources */,
+				62AF032E2564476200535D3B /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		62AF033A2564476300535D3B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				62AF03432564476400535D3B /* Taste_BudsTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		62AF03452564476400535D3B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				62AF034E2564476400535D3B /* Taste_BudsUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		62AF03402564476300535D3B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 62AF03272564476200535D3B /* Taste-Buds */;
+			targetProxy = 62AF033F2564476300535D3B /* PBXContainerItemProxy */;
+		};
+		62AF034B2564476400535D3B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 62AF03272564476200535D3B /* Taste-Buds */;
+			targetProxy = 62AF034A2564476400535D3B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		62AF03312564476200535D3B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				62AF03322564476200535D3B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		62AF03362564476300535D3B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				62AF03372564476300535D3B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		62AF03502564476400535D3B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		62AF03512564476400535D3B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		62AF03532564476400535D3B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8MHV9PDY5P;
+				INFOPLIST_FILE = "Taste-Buds/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "ralphjus.Taste-Buds";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		62AF03542564476400535D3B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8MHV9PDY5P;
+				INFOPLIST_FILE = "Taste-Buds/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "ralphjus.Taste-Buds";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		62AF03562564476400535D3B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8MHV9PDY5P;
+				INFOPLIST_FILE = "Taste-BudsTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "ralphjus.Taste-BudsTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Taste-Buds.app/Taste-Buds";
+			};
+			name = Debug;
+		};
+		62AF03572564476400535D3B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8MHV9PDY5P;
+				INFOPLIST_FILE = "Taste-BudsTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "ralphjus.Taste-BudsTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Taste-Buds.app/Taste-Buds";
+			};
+			name = Release;
+		};
+		62AF03592564476400535D3B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8MHV9PDY5P;
+				INFOPLIST_FILE = "Taste-BudsUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "ralphjus.Taste-BudsUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Taste-Buds";
+			};
+			name = Debug;
+		};
+		62AF035A2564476400535D3B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8MHV9PDY5P;
+				INFOPLIST_FILE = "Taste-BudsUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "ralphjus.Taste-BudsUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Taste-Buds";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		62AF03232564476200535D3B /* Build configuration list for PBXProject "Taste-Buds" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				62AF03502564476400535D3B /* Debug */,
+				62AF03512564476400535D3B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		62AF03522564476400535D3B /* Build configuration list for PBXNativeTarget "Taste-Buds" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				62AF03532564476400535D3B /* Debug */,
+				62AF03542564476400535D3B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		62AF03552564476400535D3B /* Build configuration list for PBXNativeTarget "Taste-BudsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				62AF03562564476400535D3B /* Debug */,
+				62AF03572564476400535D3B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		62AF03582564476400535D3B /* Build configuration list for PBXNativeTarget "Taste-BudsUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				62AF03592564476400535D3B /* Debug */,
+				62AF035A2564476400535D3B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 62AF03202564476200535D3B /* Project object */;
+}

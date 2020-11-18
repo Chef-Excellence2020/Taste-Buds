@@ -73,3 +73,65 @@ A recipe app that focuses on collaborative creation. Users can suggest alternati
 ### [BONUS] Interactive Prototype
 <img src="https://github.com/Chef-Excellence2020/Taste-Buds/blob/main/Assets/WireframeGIF.gif" width=200>
 GIFs created with [ezgif](https://ezgif.com/).
+
+## Schema
+
+### Models
+
+### Post
+| Property      | Type     | Description     |
+| :------------- | :----------: | :-----------: |
+|  postId | String   | unique ID for posts   |
+|  userId | String   | unique ID for user   |
+| Author | Pointer to User | Recipe author ID |
+| title | String | title of recipe |
+| Image   | File | picture of recipe |
+| caption | String | image caption by author |
+
+### Profile
+| Property      | Type     | Description     |
+| :------------- | :----------: | :-----------: |
+|  userId | String   | unique ID for user   |
+| profilePicture   | File | profile picture |
+| userBio | String | text user bio |
+|  postId | String   | unique ID for posts   |
+|  userSaves | array   | Post IDs saved by user   |
+
+### Home and Discovery Feeds
+| Property      | Type     | Description     |
+| :------------- | :----------: | :-----------: |
+|  postId | String   | unique ID for posts   |
+|  userId | String   | unique ID for user   |
+| Author | Pointer to User | Recipe author ID |
+| title | String | title of recipe |
+| Image   | File | picture of recipe |
+| title | String | title of recipe |
+| savesCount   | Number | number of saves |
+| createdAt   | DateTime | When recipe was created |
+| ratingCount | Number | number of ratings on a post |
+| ratingScore | Number | rating on a post |
+
+### Recipe page
+| Property      | Type     | Description     |
+| :------------- | :----------: | :-----------: |
+|  postId | String   | unique ID for posts   |
+|  userId | String   | unique ID for user   |
+| Author | Pointer to User | Recipe author ID |
+| title | String | title of recipe |
+| Image   | File | picture of recipe |
+| title | String | title of recipe |
+| profilePicture   | File | profile picture |
+| caption | String | image caption by author |
+| savesCount   | Number | number of saves |
+| createdAt   | DateTime | When recipe was created |
+| ratingCount | Number | number of ratings on a post |
+| ratingScore | Number | rating on a post |
+| Ingredients  | Array | List of strings containing ingredients |
+| Directions  | Array | List of strings containing directions |
+| updateDate | DateTime | time and date of any most recent updates |
+
+## Networking
+
+### List of netowrk requests by screen
+
+Coming soon!

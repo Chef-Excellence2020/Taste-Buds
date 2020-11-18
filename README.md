@@ -132,6 +132,6 @@ GIFs created with [ezgif](https://ezgif.com/).
 
 ## Networking
 
-### List of netowrk requests by screen
+### List of network requests by screen
 
 Coming soon!

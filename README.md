@@ -147,7 +147,9 @@ GIFs created with [ezgif](https://ezgif.com/).
 
 - View recipe
     - (Read/GET) Check saved status of recipe relative to current user
+    - (Read/GET) Return average user score
     - (Update/PUT) Add/remove recipe to user's saved recipes
+    - (Update/PUT) add to aggregate user score
 
 - Create new recipe
     - (Create/POST) Create a new recipe

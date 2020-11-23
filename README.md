@@ -6,6 +6,8 @@ Taste Buds
 1. [Overview](#Overview)
 1. [Product Spec](#Product-Spec)
 1. [Wireframes](#Wireframes)
+1. [Schema](#Schema)
+1. [Networking](#Networking)
 
 ## Overview
 ### Description
@@ -134,4 +136,32 @@ GIFs created with [ezgif](https://ezgif.com/).
 
 ### List of network requests by screen
 
-Coming soon!
+- Log in
+    - (Read/GET) Check login credentials
+
+- Sign up
+    -  (Create/POST) Create a new user account
+
+- Main feed
+    - (Read/GET) Query all posts where current user follows post author
+
+- View recipe
+    - (Read/GET) Check saved status of recipe relative to current user
+    - (Update/PUT) Add/remove recipe to user's saved recipes
+
+- Create new recipe
+    - (Create/POST) Create a new recipe
+
+- Edit existing recipe
+    - (Read/GET) Get current recipe
+    -  (Update/PUT) Send suggestion to recipe author
+
+- Profile
+    - (Read/GET) Query all posts where user is author
+    - (Read/GET) Check followed status of user (if user != current user)
+    - (Update/PUT) Add/remove user from user's follow list
+
+- Edit profile
+    - (Read/GET) Query logged in user object
+    - (Read/GET) Query all posts where user is author
+    - (Update/PUT) Update user profile image

@@ -8,6 +8,7 @@ Taste Buds
 1. [Wireframes](#Wireframes)
 1. [Schema](#Schema)
 1. [Networking](#Networking)
+1. [Walkthrough](#Walkthrough)
 
 ## Overview
 ### Description
@@ -74,7 +75,7 @@ A recipe app that focuses on collaborative creation. Users can suggest alternati
 
 ### [BONUS] Interactive Prototype
 <img src="https://github.com/Chef-Excellence2020/Taste-Buds/blob/main/Assets/WireframeGIF.gif" width=200>
-GIFs created with [ezgif](https://ezgif.com/).
+GIF created with [ezgif](https://ezgif.com/).
 
 ## Schema
 
@@ -167,3 +168,8 @@ GIFs created with [ezgif](https://ezgif.com/).
     - (Read/GET) Query logged in user object
     - (Read/GET) Query all posts where user is author
     - (Update/PUT) Update user profile image
+
+## Walkthrough
+
+<img src="https://github.com/Chef-Excellence2020/Taste-Buds/blob/main/Assets/iPhoneDemo.gif" width=200>
+GIF created with [Recordit](https://recordit.co/).

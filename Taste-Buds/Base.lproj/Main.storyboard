@@ -12,7 +12,7 @@
         <!--LoginViewController-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController restorationIdentifier="LoginViewController" storyboardIdentifier="LoginViewController" title="LoginViewController" id="BYZ-38-t0r" customClass="ViewController" customModule="Taste_Buds" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LoginViewController" title="LoginViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYZ-38-t0r" customClass="LoginViewController" customModule="Taste_Buds" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -29,35 +29,40 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yxh-FE-mgv" userLabel="Login">
+                                <rect key="frame" x="188" y="505" width="38" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Login"/>
+                                <connections>
+                                    <action selector="LoginButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="FMi-tL-w1U"/>
+                                </connections>
+                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0LV-Ui-m4G" userLabel="SignUp">
-                                <rect key="frame" x="180" y="579" width="54" height="30"/>
+                                <rect key="frame" x="268" y="505" width="54" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Sign Up"/>
                                 <connections>
                                     <segue destination="985-y1-XYa" kind="presentation" id="cPI-g9-Dor"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yxh-FE-mgv" userLabel="Login">
-                                <rect key="frame" x="188" y="505" width="38" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Login"/>
-                                <connections>
-                                    <segue destination="ymq-R9-wOV" kind="presentation" identifier="onLogin" modalPresentationStyle="fullScreen" id="xK0-ux-KNg"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <connections>
+                        <outlet property="Password" destination="6XR-H5-WY5" id="cec-Vw-7Nk"/>
+                        <outlet property="Username" destination="V7n-I0-sHw" id="YxJ-bU-JZH"/>
+                        <segue destination="ymq-R9-wOV" kind="presentation" identifier="onLogin" modalPresentationStyle="fullScreen" id="fFZ-Ws-JN1"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="160.86956521739131" y="0.0"/>
         </scene>
-        <!--View Controller-->
+        <!--Sign Up View Controller-->
         <scene sceneID="Ydo-lO-dWk">
             <objects>
-                <viewController id="985-y1-XYa" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SignUpViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="985-y1-XYa" customClass="SignUpViewController" customModule="Taste_Buds" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Jnq-8U-B7s">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -97,6 +102,9 @@
                                 <rect key="frame" x="180" y="584" width="54" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Sign Up"/>
+                                <connections>
+                                    <action selector="onSignup:" destination="985-y1-XYa" eventType="touchUpInside" id="NFb-Gy-tay"/>
+                                </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Confrim Password" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9RZ-AD-ih4">
                                 <rect key="frame" x="20" y="530" width="374" height="34"/>
@@ -108,6 +116,14 @@
                         <viewLayoutGuide key="safeArea" id="8Kw-DO-hGD"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <connections>
+                        <outlet property="ConfirmEmail" destination="zgQ-ZT-EhK" id="Oy5-ie-OaN"/>
+                        <outlet property="ConfirmPassword" destination="9RZ-AD-ih4" id="wul-j6-p1Z"/>
+                        <outlet property="Email" destination="hA2-85-mKF" id="ViP-2O-O9d"/>
+                        <outlet property="Password" destination="IYS-Gk-N8z" id="Dot-Ci-H7C"/>
+                        <outlet property="Username" destination="kQW-Ch-l7w" id="Qeu-28-7Cl"/>
+                        <segue destination="ymq-R9-wOV" kind="presentation" identifier="onSignUp" modalPresentationStyle="fullScreen" id="rqo-MO-tn0"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xHn-vx-8nd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -155,7 +171,7 @@
         <!--Profile-->
         <scene sceneID="FAy-eo-Db7">
             <objects>
-                <viewController id="1hd-yL-j4R" sceneMemberID="viewController">
+                <viewController id="1hd-yL-j4R" customClass="ProfileViewController" customModule="Taste_Buds" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="sL3-WD-ZcO">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="813"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -201,7 +217,13 @@
                         <viewLayoutGuide key="safeArea" id="Nfj-nM-Yoj"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Profile" id="Ldq-yH-jgS"/>
+                    <navigationItem key="navigationItem" title="Profile" id="Ldq-yH-jgS">
+                        <barButtonItem key="leftBarButtonItem" title="LogOut" id="UWi-yR-JTF">
+                            <connections>
+                                <action selector="onLogOut:" destination="1hd-yL-j4R" id="PRk-3r-5dh"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5Ln-DW-3pE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -210,7 +232,7 @@
         <!--Tab Bar Controller-->
         <scene sceneID="X6O-Dc-er1">
             <objects>
-                <tabBarController id="ymq-R9-wOV" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="FeedNavigationController" id="ymq-R9-wOV" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" id="CHD-q7-qlM">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -397,6 +419,7 @@
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="OQk-JM-psx"/>
+        <segue reference="fFZ-Ws-JN1"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="globe" catalog="system" width="128" height="121"/>

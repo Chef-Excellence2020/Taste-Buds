@@ -3,19 +3,21 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		52738ACB2B48A0A36C8B8BE5 /* Pods_Taste_BudsTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B119FA2781240A71F7BA111 /* Pods_Taste_BudsTests.framework */; };
 		62AF032C2564476200535D3B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62AF032B2564476200535D3B /* AppDelegate.swift */; };
 		62AF032E2564476200535D3B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62AF032D2564476200535D3B /* SceneDelegate.swift */; };
-		62AF03302564476200535D3B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62AF032F2564476200535D3B /* ViewController.swift */; };
 		62AF03332564476200535D3B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 62AF03312564476200535D3B /* Main.storyboard */; };
 		62AF03352564476300535D3B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 62AF03342564476300535D3B /* Assets.xcassets */; };
 		62AF03382564476300535D3B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 62AF03362564476300535D3B /* LaunchScreen.storyboard */; };
 		62AF03432564476400535D3B /* Taste_BudsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62AF03422564476400535D3B /* Taste_BudsTests.swift */; };
 		62AF034E2564476400535D3B /* Taste_BudsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62AF034D2564476400535D3B /* Taste_BudsUITests.swift */; };
+		62F170F8257428AB000C8557 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62F170F7257428AB000C8557 /* SignUpViewController.swift */; };
+		62F1710025742F2E000C8557 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62F170FF25742F2E000C8557 /* LoginViewController.swift */; };
+		62F1710525743C17000C8557 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62F1710425743C17000C8557 /* ProfileViewController.swift */; };
 		D66BE8E90A963B7BAD68F610 /* Pods_Taste_Buds_Taste_BudsUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF53DF169D904BCD58C5D988 /* Pods_Taste_Buds_Taste_BudsUITests.framework */; };
 		DC19CFF4E97E21FE27F3ACEA /* Pods_Taste_Buds.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBEA8583F939ED2EC82E0B38 /* Pods_Taste_Buds.framework */; };
 /* End PBXBuildFile section */
@@ -45,7 +47,6 @@
 		62AF03282564476200535D3B /* Taste-Buds.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Taste-Buds.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		62AF032B2564476200535D3B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		62AF032D2564476200535D3B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		62AF032F2564476200535D3B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		62AF03322564476200535D3B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		62AF03342564476300535D3B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		62AF03372564476300535D3B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -56,6 +57,9 @@
 		62AF03492564476400535D3B /* Taste-BudsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Taste-BudsUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		62AF034D2564476400535D3B /* Taste_BudsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Taste_BudsUITests.swift; sourceTree = "<group>"; };
 		62AF034F2564476400535D3B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		62F170F7257428AB000C8557 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		62F170FF25742F2E000C8557 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		62F1710425743C17000C8557 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		9D19E5E7B648C5AB7439F90C /* Pods-Taste-BudsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Taste-BudsTests.release.xcconfig"; path = "Target Support Files/Pods-Taste-BudsTests/Pods-Taste-BudsTests.release.xcconfig"; sourceTree = "<group>"; };
 		BF53DF169D904BCD58C5D988 /* Pods_Taste_Buds_Taste_BudsUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Taste_Buds_Taste_BudsUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CBCE94FE080B126FA522363F /* Pods-Taste-Buds-Taste-BudsUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Taste-Buds-Taste-BudsUITests.release.xcconfig"; path = "Target Support Files/Pods-Taste-Buds-Taste-BudsUITests/Pods-Taste-Buds-Taste-BudsUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -118,11 +122,13 @@
 			children = (
 				62AF032B2564476200535D3B /* AppDelegate.swift */,
 				62AF032D2564476200535D3B /* SceneDelegate.swift */,
-				62AF032F2564476200535D3B /* ViewController.swift */,
+				62F170FF25742F2E000C8557 /* LoginViewController.swift */,
 				62AF03312564476200535D3B /* Main.storyboard */,
 				62AF03342564476300535D3B /* Assets.xcassets */,
 				62AF03362564476300535D3B /* LaunchScreen.storyboard */,
 				62AF03392564476300535D3B /* Info.plist */,
+				62F170F7257428AB000C8557 /* SignUpViewController.swift */,
+				62F1710425743C17000C8557 /* ProfileViewController.swift */,
 			);
 			path = "Taste-Buds";
 			sourceTree = "<group>";
@@ -155,7 +161,6 @@
 				341A87FA9F9970A46146F5F8 /* Pods-Taste-BudsTests.debug.xcconfig */,
 				9D19E5E7B648C5AB7439F90C /* Pods-Taste-BudsTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -407,8 +412,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				62AF03302564476200535D3B /* ViewController.swift in Sources */,
+				62F1710025742F2E000C8557 /* LoginViewController.swift in Sources */,
 				62AF032C2564476200535D3B /* AppDelegate.swift in Sources */,
+				62F1710525743C17000C8557 /* ProfileViewController.swift in Sources */,
+				62F170F8257428AB000C8557 /* SignUpViewController.swift in Sources */,
 				62AF032E2564476200535D3B /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

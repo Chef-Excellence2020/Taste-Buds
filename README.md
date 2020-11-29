@@ -38,6 +38,15 @@ A recipe app that focuses on collaborative creation. Users can suggest alternati
 * Intigrated cooking assistant utilities (timer, safe cooking temperatures, information on uncommon techniques, grocery list builder)
 * Pintrest-esque shareable collections of recipes
 
+**Mini Goals!**
+- [x] User can log in.
+- [x] User can log out.
+- [x] User stays logged in across restarts.
+- [ ] User can log in with Google account.
+- [ ] User can post recipes.
+- [ ] User can edit profile.
+- [ ] User can view other recipes and profiles.
+
 ### 2. Screen Archetypes
 * Login / Register
 * Focused feed

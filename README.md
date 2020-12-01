@@ -180,5 +180,12 @@ GIF created with [ezgif](https://ezgif.com/).
 
 ## Walkthrough
 
+## Week 1
+
 <img src="https://github.com/Chef-Excellence2020/Taste-Buds/blob/main/Assets/iPhoneDemo.gif" width=200>
-GIF created with [Recordit](https://recordit.co/).
+
+## Week 2
+
+<img src="https://github.com/Chef-Excellence2020/Taste-Buds/blob/main/Assets/login.gif" width=200>
+
+GIFs created with [Recordit](https://recordit.co/).

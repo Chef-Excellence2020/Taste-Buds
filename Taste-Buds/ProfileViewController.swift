@@ -78,7 +78,7 @@ class ProfileViewController: UIViewController, UIImagePickerControllerDelegate &
    }
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
         let image = info[.editedImage] as! UIImage
-        let size = CGSize(width: 500, height: 50)
+        let size = CGSize(width: 150, height: 150)
         let scaledimage = image.af.imageAspectScaled(toFill: size)
         ProfilePic.image = scaledimage
         
@@ -87,7 +87,7 @@ class ProfileViewController: UIViewController, UIImagePickerControllerDelegate &
         let imageData = ProfilePic.image!.pngData()
         let file = PFFileObject(data: imageData!)
         user?.setObject(file as Any, forKey: "ProfilePic")
-        ProfilePic.layer.cornerRadius = 60
+        ProfilePic.layer.cornerRadius = 75
         user?.saveInBackground{ (success, error) in if success{
             print("Saved!")
             self.dismiss(animated: true, completion: nil)

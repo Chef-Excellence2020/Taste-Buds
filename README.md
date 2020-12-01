@@ -1,6 +1,7 @@
 Taste Buds
 ===
 
+<img src="https://github.com/Chef-Excellence2020/Taste-Buds/blob/main/Assets/TasteBudsLogoRed.png" width=1271>
 
 ## Table of Contents
 1. [Overview](#Overview)

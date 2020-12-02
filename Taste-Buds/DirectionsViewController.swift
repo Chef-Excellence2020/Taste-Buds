@@ -1,5 +1,5 @@
 //
-//  IngredientsViewController.swift
+//  DirectionsViewController.swift
 //  Taste-Buds
 //
 //  Created by Justin Ralph on 12/1/20.
@@ -9,7 +9,7 @@ import UIKit
 import MessageInputBar
 import Parse
 
-class IngredientsViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, MessageInputBarDelegate {
+class DirectionsViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, MessageInputBarDelegate {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return ingredientsList.count + 1
     }
@@ -20,15 +20,15 @@ class IngredientsViewController: UIViewController, UITableViewDelegate, UITableV
         print(ingredientsList.count)
         print(ingredientsList)
         if ingredientsList.count + 1 == 1 {
-            let cell = TableView.dequeueReusableCell(withIdentifier: "AddIngredientCell")!
+            let cell = TableView.dequeueReusableCell(withIdentifier: "AddDirectionCell")!
             return cell
         }
         else if indexPath.row < ingredientsList.count {
-            let cell = TableView.dequeueReusableCell(withIdentifier: "PostedIngredientTableViewCell") as! PostedIngredientTableViewCell
-            cell.ingredient.text = ingredientsList[indexPath.row]
+            let cell = TableView.dequeueReusableCell(withIdentifier: "PostDirectionCell") as! PostDirectionTableViewCell
+            cell.Direction.text = ingredientsList[indexPath.row]
             return cell
         }else {
-        let cell = TableView.dequeueReusableCell(withIdentifier: "AddIngredientCell")!
+        let cell = TableView.dequeueReusableCell(withIdentifier: "AddDirectionCell")!
         return cell
         }
     }

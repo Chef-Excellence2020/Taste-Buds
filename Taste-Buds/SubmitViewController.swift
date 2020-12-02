@@ -11,11 +11,20 @@ class SubmitViewController: UIViewController {
 
     var ingredientsList = [String]()
     var directionsList = [String]()
+    var photo = UIImage()
+    var name = String()
+    var prep = String()
+    var cook = String()
+    var servings = String()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         print(ingredientsList)
         print(directionsList)
+        print(name)
+        print(prep)
+        print(cook)
+        print(servings)
         // Do any additional setup after loading the view.
     }
     

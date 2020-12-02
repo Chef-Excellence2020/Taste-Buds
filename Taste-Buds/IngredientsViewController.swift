@@ -16,6 +16,18 @@ class IngredientsViewController: UIViewController, UITableViewDelegate, UITableV
     
     @IBOutlet weak var IngredientsTableView: UITableView!
     
+    var directionsList = String()
+    
+    var photo = UIImage()
+    
+    var name = String()
+    
+    var prep = String()
+    
+    var cook = String()
+    
+    var servings = String()
+    
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         print(ingredientsList.count)
         print(ingredientsList)
@@ -54,11 +66,15 @@ class IngredientsViewController: UIViewController, UITableViewDelegate, UITableV
     let ingredientInputBar = MessageInputBar()
     var showInputBar = false
     var ingredientsList = [String]()
+    @IBOutlet var pass_post: PFObject!
     override func viewDidLoad() {
         super.viewDidLoad()
         TableView.delegate = self
         TableView.dataSource = self
-        
+        print(name)
+        print(prep)
+        print(cook)
+        print(servings)
         ingredientInputBar.inputTextView.placeholder = "Ingredient + amount"
         ingredientInputBar.sendButton.title = "Add"
         ingredientInputBar.delegate = self
@@ -88,6 +104,11 @@ class IngredientsViewController: UIViewController, UITableViewDelegate, UITableV
         //Pass ingredients to Directions page
         let DirectionsViewController = segue.destination as! DirectionsViewController
         DirectionsViewController.ingredientsList = ingredientsList
+        DirectionsViewController.name = name
+        DirectionsViewController.prep = prep
+        DirectionsViewController.cook = cook
+        DirectionsViewController.servings = servings
+        DirectionsViewController.photo = photo
     }
 
     /*

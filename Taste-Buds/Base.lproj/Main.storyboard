@@ -320,25 +320,85 @@
             </objects>
             <point key="canvasLocation" x="160.86956521739131" y="2258.0357142857142"/>
         </scene>
-        <!--View Controller-->
+        <!--Dish Info View Controller-->
         <scene sceneID="6K6-AM-jJc">
             <objects>
-                <viewController id="Odf-SC-TjW" sceneMemberID="viewController">
+                <viewController id="Odf-SC-TjW" customClass="DishInfoViewController" customModule="Taste_Buds" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="dSl-qC-bzh">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="813"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Dish name" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NsO-9T-xvj">
+                                <rect key="frame" x="159" y="352" width="97" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Prep time" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vBs-1Q-ELb">
+                                <rect key="frame" x="50" y="418" width="97" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                <connections>
+                                    <action selector="prepEdit:" destination="Odf-SC-TjW" eventType="valueChanged" id="Mdd-eT-F2B"/>
+                                </connections>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Cook Time" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="JbP-5W-nEX">
+                                <rect key="frame" x="50" y="506" width="98" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Servings" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="s6A-d0-WrX">
+                                <rect key="frame" x="230" y="458" width="97" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Description" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dPy-VQ-Deu">
+                                <rect key="frame" x="192" y="416" width="102" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="DrQ-gy-Ug4">
+                                <rect key="frame" x="107" y="144" width="200" height="200"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <accessibilityTraits key="traits" button="YES" image="YES"/>
+                                </accessibility>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="oyx-4O-W1y" appends="YES" id="Pa4-Kt-naL"/>
+                                </connections>
+                            </imageView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="Qxq-Pb-idm"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="aeY-E1-8jN">
                         <barButtonItem key="rightBarButtonItem" title="+ Ingredients" id="1Cz-VH-nu1">
                             <connections>
+                                <action selector="onNextPress:" destination="Odf-SC-TjW" id="EMV-Z0-6j4"/>
                                 <segue destination="1Kq-NY-KuO" kind="show" id="KAB-d0-PP0"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="cook" destination="JbP-5W-nEX" id="Sdu-5O-egs"/>
+                        <outlet property="description_dish" destination="dPy-VQ-Deu" id="1se-od-i5K"/>
+                        <outlet property="name" destination="NsO-9T-xvj" id="qLu-Db-EAT"/>
+                        <outlet property="photo" destination="DrQ-gy-Ug4" id="xYa-qP-1J2"/>
+                        <outlet property="prep" destination="vBs-1Q-ELb" id="1n8-2H-W8b"/>
+                        <outlet property="servings" destination="s6A-d0-WrX" id="LsZ-GD-PrH"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VhU-vx-OmR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="oyx-4O-W1y">
+                    <connections>
+                        <action selector="onPhotoPress:" destination="Odf-SC-TjW" id="lRZ-Ix-vKY"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="183" y="2922"/>
         </scene>

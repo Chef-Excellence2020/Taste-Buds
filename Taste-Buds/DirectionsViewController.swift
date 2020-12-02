@@ -53,6 +53,11 @@ class DirectionsViewController: UIViewController, UITableViewDelegate, UITableVi
     var showInputBar = false
     var ingredientsList = [String]()
     var directionsList = [String]()
+    var photo = UIImage()
+    var name = String()
+    var prep = String()
+    var cook = String()
+    var servings = String()
     override func viewDidLoad() {
         super.viewDidLoad()
         TableView.delegate = self
@@ -88,6 +93,12 @@ class DirectionsViewController: UIViewController, UITableViewDelegate, UITableVi
         let SubmitViewController = segue.destination as! SubmitViewController
         SubmitViewController.ingredientsList = ingredientsList
         SubmitViewController.directionsList = directionsList
+        SubmitViewController.name = name
+        SubmitViewController.prep = prep
+        SubmitViewController.cook = cook
+        SubmitViewController.servings = servings
+        SubmitViewController.photo = photo
+        
 
     }
 

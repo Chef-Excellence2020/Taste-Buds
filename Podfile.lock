@@ -30,6 +30,7 @@ PODS:
     - Bolts/Tasks (= 1.9.1)
   - RSKPlaceholderTextView (6.0.3)
   - SkeletonView (1.10.0)
+  - Toast-Swift (5.0.1)
 
 DEPENDENCIES:
   - AFNetworking
@@ -40,6 +41,7 @@ DEPENDENCIES:
   - Parse
   - RSKPlaceholderTextView
   - SkeletonView
+  - Toast-Swift (~> 5.0.0)
 
 SPEC REPOS:
   trunk:
@@ -53,6 +55,7 @@ SPEC REPOS:
     - Parse
     - RSKPlaceholderTextView
     - SkeletonView
+    - Toast-Swift
 
 SPEC CHECKSUMS:
   AFNetworking: a0075feb321559dc78d9d85b55d11caa19eabb93
@@ -65,7 +68,8 @@ SPEC CHECKSUMS:
   Parse: e40fdb9c7d665823b7fe9865949cac9a53eb2ce7
   RSKPlaceholderTextView: fc8c8932546298ec9d5e5572284aa42adb87b066
   SkeletonView: 14fbe9702c7fb5c5f011b44ac3ae99fc73155726
+  Toast-Swift: 9b6a70f28b3bf0b96c40d46c0c4b9d6639846711
 
-PODFILE CHECKSUM: 84c06753cbe385e09ba8ce353dd3be3aa11ca8ed
+PODFILE CHECKSUM: fcda1dc0d678f53ac85dfceef34f00b5b16330ea
 
 COCOAPODS: 1.9.3

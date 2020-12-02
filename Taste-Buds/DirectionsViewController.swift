@@ -58,6 +58,7 @@ class DirectionsViewController: UIViewController, UITableViewDelegate, UITableVi
     var prep = String()
     var cook = String()
     var servings = String()
+    var description_dish = String()
     override func viewDidLoad() {
         super.viewDidLoad()
         TableView.delegate = self
@@ -98,6 +99,7 @@ class DirectionsViewController: UIViewController, UITableViewDelegate, UITableVi
         SubmitViewController.cook = cook
         SubmitViewController.servings = servings
         SubmitViewController.photo = photo
+        SubmitViewController.description_dish = description_dish
         
 
     }

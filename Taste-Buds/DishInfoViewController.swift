@@ -22,38 +22,10 @@ class DishInfoViewController: UIViewController, UIImagePickerControllerDelegate 
     
     @IBOutlet weak var description_dish: UITextField!
     
-    @IBOutlet var pass_photo: PFFileObject!
-    
-    var pass_post = PFObject(className: "Post")
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         photo.layer.cornerRadius = 60
         // Do any additional setup after loading the view.
-    }
-    
-    @IBAction func onNextPress(_ sender: Any) {
-    
-    }
-    
-    override func viewWillDisappear(_ animated: Bool) {
-
-    }
-    
-    override func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {
-        let post = PFObject(className: "Post")
-        
-        post["photo"] = pass_photo
-        post["author"] = PFUser.current()
-        post["name"] = name.text
-        post["prep"] = prep.text
-        post["cook"] = cook.text
-        post["servings"] = servings.text
-        post["description"] = description_dish.text
-        post["ingredients"] = ""
-        post["directions"] = ""
-        
-        pass_post = post
     }
     
     
@@ -111,9 +83,6 @@ class DishInfoViewController: UIViewController, UIImagePickerControllerDelegate 
         let scaledimage = image.af.imageAspectScaled(toFill: size)
         photo.image = scaledimage
         photo.layer.cornerRadius = 60
-        let imageData = photo.image!.pngData()
-        let file = PFFileObject(data: imageData!)
-        pass_photo = file!
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -125,6 +94,8 @@ class DishInfoViewController: UIViewController, UIImagePickerControllerDelegate 
         ingredientsViewController.cook = cook.text!
         ingredientsViewController.servings = servings.text!
         ingredientsViewController.photo = photo.image!
+        
+        ingredientsViewController.description_dish = description_dish.text!
     }
 
 }

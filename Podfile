@@ -14,6 +14,7 @@ target 'Taste-Buds' do
   pod 'RSKPlaceholderTextView'
   pod 'Parse'
   pod 'MessageInputBar'
+  pod 'Toast-Swift', '~> 5.0.0'
 
   target 'Taste-BudsTests' do
     inherit! :search_paths

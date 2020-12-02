@@ -28,6 +28,8 @@ class IngredientsViewController: UIViewController, UITableViewDelegate, UITableV
     
     var servings = String()
     
+    var description_dish = String()
+    
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         print(ingredientsList.count)
         print(ingredientsList)
@@ -66,7 +68,6 @@ class IngredientsViewController: UIViewController, UITableViewDelegate, UITableV
     let ingredientInputBar = MessageInputBar()
     var showInputBar = false
     var ingredientsList = [String]()
-    @IBOutlet var pass_post: PFObject!
     override func viewDidLoad() {
         super.viewDidLoad()
         TableView.delegate = self
@@ -109,6 +110,7 @@ class IngredientsViewController: UIViewController, UITableViewDelegate, UITableV
         DirectionsViewController.cook = cook
         DirectionsViewController.servings = servings
         DirectionsViewController.photo = photo
+        DirectionsViewController.description_dish = description_dish
     }
 
     /*

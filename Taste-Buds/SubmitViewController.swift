@@ -6,6 +6,8 @@
 //
 
 import UIKit
+import Parse
+import Toast_Swift
 
 class SubmitViewController: UIViewController {
 
@@ -16,19 +18,36 @@ class SubmitViewController: UIViewController {
     var prep = String()
     var cook = String()
     var servings = String()
+    var description_dish = String()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        print(ingredientsList)
-        print(directionsList)
-        print(name)
-        print(prep)
-        print(cook)
-        print(servings)
+
+        let imageData = photo.pngData()
+        let file = PFFileObject(data: imageData!)
+        
+        let post = PFObject(className: "Post")
+        
+        post["photo"] = file
+        post["author"] = PFUser.current()
+        post["name"] = name
+        post["prep"] = prep
+        post["cook"] = cook
+        post["servings"] = servings
+        post["description"] = description_dish
+        post["ingredients"] = ingredientsList
+        post["directions"] = directionsList
+        print(post)
         // Do any additional setup after loading the view.
     }
     
-
+    @IBAction func onSubmit(_ sender: Any) {
+        
+        self.navigationController?.view.makeToast("Bone apple tea!", duration: 3.0, position: .center)
+        
+    }
+    
+    
     /*
     // MARK: - Navigation
 

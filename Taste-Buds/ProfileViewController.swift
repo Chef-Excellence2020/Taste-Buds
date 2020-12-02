@@ -18,7 +18,6 @@ class ProfileViewController: UIViewController, UIImagePickerControllerDelegate &
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        ProfilePic.layer.cornerRadius = 75
         let user = PFUser.current()
         username.text = user?.username
         //set profile pic from database
@@ -26,6 +25,7 @@ class ProfileViewController: UIViewController, UIImagePickerControllerDelegate &
         let urlString = imageFile.url!
         let url = URL(string: urlString)!
         ProfilePic.af.setImage(withURL: url)
+        ProfilePic.layer.cornerRadius = 75
         // Do any additional setup after loading the view.
     }
     

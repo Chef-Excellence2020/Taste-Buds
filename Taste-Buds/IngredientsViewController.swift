@@ -28,6 +28,7 @@ class IngredientsViewController: UIViewController, UITableViewDelegate, UITableV
     }
     
     func messageInputBar(_ inputBar: MessageInputBar, didPressSendButtonWith text: String) {
+        ingredientsList.append(ingredientInputBar.inputTextView.text)
         ingredientInputBar.inputTextView.text = nil
         showInputBar = false
         becomeFirstResponder()
@@ -37,6 +38,7 @@ class IngredientsViewController: UIViewController, UITableViewDelegate, UITableV
     @IBOutlet weak var TableView: UITableView!
     let ingredientInputBar = MessageInputBar()
     var showInputBar = false
+    var ingredientsList = [String]()
     override func viewDidLoad() {
         super.viewDidLoad()
         TableView.delegate = self

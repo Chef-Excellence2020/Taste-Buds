@@ -134,7 +134,7 @@
             <objects>
                 <viewController id="XOf-ic-S66" customClass="FeedViewController" customModule="Taste_Buds" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="psQ-wo-Ddn">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="813"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="lUj-04-BW1">
@@ -325,7 +325,7 @@
             <objects>
                 <viewController id="Odf-SC-TjW" customClass="DishInfoViewController" customModule="Taste_Buds" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="dSl-qC-bzh">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="813"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Dish name" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NsO-9T-xvj">
@@ -407,7 +407,7 @@
             <objects>
                 <viewController id="1Kq-NY-KuO" customClass="IngredientsViewController" customModule="Taste_Buds" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="9aC-Ew-Wda">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="813"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="lXW-Dk-TwQ">
@@ -479,7 +479,7 @@
             <objects>
                 <viewController id="QeY-H3-gqy" customClass="DirectionsViewController" customModule="Taste_Buds" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="92r-rV-rFv">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="813"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="RYi-x2-T4Z">
@@ -563,7 +563,7 @@
             <objects>
                 <viewController title="SubmitViewController" id="5nw-sZ-3Xm" customClass="SubmitViewController" customModule="Taste_Buds" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="AAe-Hd-cL2">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="813"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="sGc-sK-dF6"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -572,7 +572,6 @@
                         <barButtonItem key="rightBarButtonItem" title="Submit" id="0Ag-Ne-M8c">
                             <connections>
                                 <action selector="onSubmit:" destination="5nw-sZ-3Xm" id="8S6-W7-LBY"/>
-                                <segue destination="XOf-ic-S66" kind="show" id="hkH-Ie-H47"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -623,7 +622,6 @@
     <inferredMetricsTieBreakers>
         <segue reference="0QG-h4-MEc"/>
         <segue reference="fFZ-Ws-JN1"/>
-        <segue reference="hkH-Ie-H47"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="globe" catalog="system" width="128" height="121"/>

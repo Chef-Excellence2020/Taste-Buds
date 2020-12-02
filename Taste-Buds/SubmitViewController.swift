@@ -19,10 +19,15 @@ class SubmitViewController: UIViewController {
     var cook = String()
     var servings = String()
     var description_dish = String()
+    var sending = PFObject(className: "Post")
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        // Do any additional setup after loading the view.
+    }
+    
+    @IBAction func onSubmit(_ sender: Any) {
         let imageData = photo.pngData()
         let file = PFFileObject(data: imageData!)
         
@@ -37,14 +42,15 @@ class SubmitViewController: UIViewController {
         post["description"] = description_dish
         post["ingredients"] = ingredientsList
         post["directions"] = directionsList
-        print(post)
-        // Do any additional setup after loading the view.
+        
+        post.saveInBackground{ (success, error) in if success{
+            print("Saved!")
+            self.dismiss(animated: true, completion: nil)
+            self.view.makeToast("Bone apple tea!", duration: 3.0, position: .center)
+        }else{
+            print("Error!")
+        }
     }
-    
-    @IBAction func onSubmit(_ sender: Any) {
-        
-        self.navigationController?.view.makeToast("Bone apple tea!", duration: 3.0, position: .center)
-        
     }
     
     

@@ -11,21 +11,19 @@ import Parse
 
 class DirectionsViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, MessageInputBarDelegate {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return ingredientsList.count + 1
+        return directionsList.count + 1
     }
     
     @IBOutlet weak var IngredientsTableView: UITableView!
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        print(ingredientsList.count)
-        print(ingredientsList)
-        if ingredientsList.count + 1 == 1 {
+        if directionsList.count + 1 == 1 {
             let cell = TableView.dequeueReusableCell(withIdentifier: "AddDirectionCell")!
             return cell
         }
-        else if indexPath.row < ingredientsList.count {
+        else if indexPath.row < directionsList.count {
             let cell = TableView.dequeueReusableCell(withIdentifier: "PostDirectionCell") as! PostDirectionTableViewCell
-            cell.Direction.text = ingredientsList[indexPath.row]
+            cell.Direction.text = directionsList[indexPath.row]
             return cell
         }else {
         let cell = TableView.dequeueReusableCell(withIdentifier: "AddDirectionCell")!
@@ -42,7 +40,7 @@ class DirectionsViewController: UIViewController, UITableViewDelegate, UITableVi
     }
     
     func messageInputBar(_ inputBar: MessageInputBar, didPressSendButtonWith text: String) {
-        ingredientsList.append(ingredientInputBar.inputTextView.text)
+        directionsList.append(ingredientInputBar.inputTextView.text)
         ingredientInputBar.inputTextView.text = nil
         showInputBar = false
         becomeFirstResponder()
@@ -54,6 +52,7 @@ class DirectionsViewController: UIViewController, UITableViewDelegate, UITableVi
     let ingredientInputBar = MessageInputBar()
     var showInputBar = false
     var ingredientsList = [String]()
+    var directionsList = [String]()
     override func viewDidLoad() {
         super.viewDidLoad()
         TableView.delegate = self
@@ -83,14 +82,13 @@ class DirectionsViewController: UIViewController, UITableViewDelegate, UITableVi
         return showInputBar
     }
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    
+        //Pass ingredients and directions to submit page
+        let SubmitViewController = segue.destination as! SubmitViewController
+        SubmitViewController.ingredientsList = ingredientsList
+        SubmitViewController.directionsList = directionsList
+
     }
-    */
 
 }

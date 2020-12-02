@@ -82,6 +82,13 @@ class IngredientsViewController: UIViewController, UITableViewDelegate, UITableV
     override var canBecomeFirstResponder: Bool{
         return showInputBar
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+    
+        //Pass ingredients to Directions page
+        let DirectionsViewController = segue.destination as! DirectionsViewController
+        DirectionsViewController.ingredientsList = ingredientsList
+    }
 
     /*
     // MARK: - Navigation

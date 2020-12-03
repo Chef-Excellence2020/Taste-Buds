@@ -11,6 +11,7 @@
 		6268860B2577FCB5007616AD /* SubmitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6268860A2577FCB5007616AD /* SubmitViewController.swift */; };
 		62688610257801A5007616AD /* DishInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6268860F257801A5007616AD /* DishInfoViewController.swift */; };
 		6268862625782422007616AD /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6268862525782422007616AD /* FeedViewController.swift */; };
+		6268863D2578721B007616AD /* HomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6268863C2578721B007616AD /* HomeTableViewCell.swift */; };
 		6272AE5B2577097F00DB0185 /* IngredientsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6272AE5A2577097F00DB0185 /* IngredientsViewController.swift */; };
 		6272AE6325771A8D00DB0185 /* PostedIngredientTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6272AE6225771A8D00DB0185 /* PostedIngredientTableViewCell.swift */; };
 		6272AE7A2577236400DB0185 /* DirectionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6272AE792577236400DB0185 /* DirectionsViewController.swift */; };
@@ -54,6 +55,7 @@
 		6268860A2577FCB5007616AD /* SubmitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubmitViewController.swift; sourceTree = "<group>"; };
 		6268860F257801A5007616AD /* DishInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DishInfoViewController.swift; sourceTree = "<group>"; };
 		6268862525782422007616AD /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
+		6268863C2578721B007616AD /* HomeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewCell.swift; sourceTree = "<group>"; };
 		6272AE5A2577097F00DB0185 /* IngredientsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IngredientsViewController.swift; sourceTree = "<group>"; };
 		6272AE6225771A8D00DB0185 /* PostedIngredientTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostedIngredientTableViewCell.swift; sourceTree = "<group>"; };
 		6272AE792577236400DB0185 /* DirectionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DirectionsViewController.swift; sourceTree = "<group>"; };
@@ -150,6 +152,7 @@
 				6268860A2577FCB5007616AD /* SubmitViewController.swift */,
 				6268860F257801A5007616AD /* DishInfoViewController.swift */,
 				6268862525782422007616AD /* FeedViewController.swift */,
+				6268863C2578721B007616AD /* HomeTableViewCell.swift */,
 			);
 			path = "Taste-Buds";
 			sourceTree = "<group>";
@@ -435,6 +438,7 @@
 			files = (
 				6272AE8D257724C500DB0185 /* PostDirectionTableViewCell.swift in Sources */,
 				62F1710025742F2E000C8557 /* LoginViewController.swift in Sources */,
+				6268863D2578721B007616AD /* HomeTableViewCell.swift in Sources */,
 				62AF032C2564476200535D3B /* AppDelegate.swift in Sources */,
 				62F1710525743C17000C8557 /* ProfileViewController.swift in Sources */,
 				6272AE5B2577097F00DB0185 /* IngredientsViewController.swift in Sources */,

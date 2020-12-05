@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		52738ACB2B48A0A36C8B8BE5 /* Pods_Taste_BudsTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B119FA2781240A71F7BA111 /* Pods_Taste_BudsTests.framework */; };
+		6214C7C8257BE32C00763FE5 /* PreviewTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6214C7C7257BE32C00763FE5 /* PreviewTableViewCell.swift */; };
 		6268860B2577FCB5007616AD /* SubmitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6268860A2577FCB5007616AD /* SubmitViewController.swift */; };
 		62688610257801A5007616AD /* DishInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6268860F257801A5007616AD /* DishInfoViewController.swift */; };
 		6268862625782422007616AD /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6268862525782422007616AD /* FeedViewController.swift */; };
@@ -52,6 +53,7 @@
 		2B119FA2781240A71F7BA111 /* Pods_Taste_BudsTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Taste_BudsTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		341A87FA9F9970A46146F5F8 /* Pods-Taste-BudsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Taste-BudsTests.debug.xcconfig"; path = "Target Support Files/Pods-Taste-BudsTests/Pods-Taste-BudsTests.debug.xcconfig"; sourceTree = "<group>"; };
 		536A606D469F807B70BB22B1 /* Pods-Taste-Buds-Taste-BudsUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Taste-Buds-Taste-BudsUITests.debug.xcconfig"; path = "Target Support Files/Pods-Taste-Buds-Taste-BudsUITests/Pods-Taste-Buds-Taste-BudsUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		6214C7C7257BE32C00763FE5 /* PreviewTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewTableViewCell.swift; sourceTree = "<group>"; };
 		6268860A2577FCB5007616AD /* SubmitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubmitViewController.swift; sourceTree = "<group>"; };
 		6268860F257801A5007616AD /* DishInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DishInfoViewController.swift; sourceTree = "<group>"; };
 		6268862525782422007616AD /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
@@ -153,6 +155,7 @@
 				6268860F257801A5007616AD /* DishInfoViewController.swift */,
 				6268862525782422007616AD /* FeedViewController.swift */,
 				6268863C2578721B007616AD /* HomeTableViewCell.swift */,
+				6214C7C7257BE32C00763FE5 /* PreviewTableViewCell.swift */,
 			);
 			path = "Taste-Buds";
 			sourceTree = "<group>";
@@ -444,6 +447,7 @@
 				6272AE5B2577097F00DB0185 /* IngredientsViewController.swift in Sources */,
 				62688610257801A5007616AD /* DishInfoViewController.swift in Sources */,
 				6272AE7A2577236400DB0185 /* DirectionsViewController.swift in Sources */,
+				6214C7C8257BE32C00763FE5 /* PreviewTableViewCell.swift in Sources */,
 				6268860B2577FCB5007616AD /* SubmitViewController.swift in Sources */,
 				62F170F8257428AB000C8557 /* SignUpViewController.swift in Sources */,
 				6272AE6325771A8D00DB0185 /* PostedIngredientTableViewCell.swift in Sources */,

@@ -57,6 +57,16 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
         // Do any additional setup after loading the view.
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let cell = sender as! UITableViewCell
+        let indexPath = tableView.indexPath(for: cell)!
+        let post = posts[indexPath.row]
+    
+        //Pass selected movie to details page
+        let recipeDetailsViewController = segue.destination as! RecipeDetailsViewController
+        recipeDetailsViewController.post = post
+    }
+    
 
     /*
     // MARK: - Navigation

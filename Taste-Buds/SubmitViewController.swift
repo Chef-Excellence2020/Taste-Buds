@@ -26,11 +26,13 @@ class SubmitViewController: UIViewController, UITableViewDelegate, UITableViewDa
         } else if indexPath.row <= ingredientsList.count {
             let cell = tableView.dequeueReusableCell(withIdentifier: "PreviewTableViewCell") as! PreviewTableViewCell
             cell.recipeDetails.text = ingredientsList[indexPath.row - 1]
+            suggestions[ingredientsList[indexPath.row - 1]] = []
             return cell
         }
         else if indexPath.row <= ingredientsList.count + directionsList.count + 1 {
             let cell = tableView.dequeueReusableCell(withIdentifier: "PreviewTableViewCell") as! PreviewTableViewCell
-            cell.recipeDetails.text = directionsList[count] 
+            cell.recipeDetails.text = directionsList[count]
+            suggestions[directionsList[count]] = []
             count += 1
                 return cell }
         else{
@@ -51,6 +53,7 @@ class SubmitViewController: UIViewController, UITableViewDelegate, UITableViewDa
     var description_dish = String()
     var sending = PFObject(className: "Post")
     var count = 0
+    var suggestions = [String: Array<Any>]()
 
     @IBOutlet weak var tableView: UITableView!
     
@@ -75,6 +78,12 @@ class SubmitViewController: UIViewController, UITableViewDelegate, UITableViewDa
         tableView.delegate = self
         tableView.dataSource = self
         // Do any additional setup after loading the view.
+        for item in ingredientsList {
+            suggestions[item] = []
+        }
+        for item in directionsList{
+            suggestions[item] = []
+        }
         let user = PFUser.current()
         let imageFile = user!["ProfilePic"] as! PFFileObject
         let urlString = imageFile.url!
@@ -104,6 +113,8 @@ class SubmitViewController: UIViewController, UITableViewDelegate, UITableViewDa
         post["description"] = description_dish
         post["ingredients"] = ingredientsList
         post["directions"] = directionsList
+        post["suggestions"] = suggestions
+        print(suggestions)
         
         post.saveInBackground{ (success, error) in if success{
             print("Saved!")

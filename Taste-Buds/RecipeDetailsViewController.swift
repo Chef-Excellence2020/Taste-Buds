@@ -9,6 +9,15 @@ import UIKit
 import Parse
 
 class RecipeDetailsViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let suggestions_dict = post["suggestions"] as! NSDictionary
+        let cell = tableView.cellForRow(at: indexPath) as! DetailsTableViewCell
+        key = cell.recipeDetails.text!
+        print(key)
+        DetailArray = suggestions_dict[key] as! Array<Any>
+    }
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         let ingredientsList = post["ingredients"] as! Array<Any>
         let directionsList = post["directions"] as! Array<Any>
@@ -41,6 +50,7 @@ class RecipeDetailsViewController: UIViewController, UITableViewDelegate, UITabl
             cell.recipeDetails.text = ""
             return cell
         }
+
     }
 
     @IBOutlet weak var DishPic: UIImageView!
@@ -61,8 +71,12 @@ class RecipeDetailsViewController: UIViewController, UITableViewDelegate, UITabl
     
     @IBOutlet weak var totalTime: UILabel!
     
+    
     var post = PFObject(className: "post")
     var count = 0
+    var key = ""
+    var DetailArray = [Any]()
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -87,7 +101,25 @@ class RecipeDetailsViewController: UIViewController, UITableViewDelegate, UITabl
         // Do any additional setup after loading the view.
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        //Pass ingredients and directions to submit page
+        //if suggestions_dict[key] != nil{
+            //print(suggestions_dict[key] //as! NSArray)
+            //let DetailArray = //suggestions_dict[key] //as! Array<Any>
+        if DetailArray.isEmpty {
+            print("you have unwrapped an empty array, congrats")
+            let suggestionsViewController = segue.destination as! SuggestionsViewController
+            suggestionsViewController.suggestionsArray = DetailArray
+            suggestionsViewController.key = key
+        }else{
+            let suggestionsViewController = segue.destination as! SuggestionsViewController
+            suggestionsViewController.suggestionsArray = DetailArray
+            suggestionsViewController.key = key
+        suggestionsViewController.suggestions_dict = post["suggestions"] as! [String : Array<Any>]
+        }
+        }
 
+        //suggestionsViewController.suggestionsArray = ""
     /*
     // MARK: - Navigation
 

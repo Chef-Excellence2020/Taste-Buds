@@ -26,6 +26,8 @@
 		62AF034E2564476400535D3B /* Taste_BudsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62AF034D2564476400535D3B /* Taste_BudsUITests.swift */; };
 		62E6A4C7257E8BD900B14E19 /* RecipeDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62E6A4C6257E8BD900B14E19 /* RecipeDetailsViewController.swift */; };
 		62E6A4CC257E9C5B00B14E19 /* DetailsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62E6A4CB257E9C5B00B14E19 /* DetailsTableViewCell.swift */; };
+		62E6A4D1257EAAB500B14E19 /* SuggestionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62E6A4D0257EAAB500B14E19 /* SuggestionTableViewCell.swift */; };
+		62E6A4D6257EAC7E00B14E19 /* SuggestionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62E6A4D5257EAC7E00B14E19 /* SuggestionsViewController.swift */; };
 		62F170F8257428AB000C8557 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62F170F7257428AB000C8557 /* SignUpViewController.swift */; };
 		62F1710025742F2E000C8557 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62F170FF25742F2E000C8557 /* LoginViewController.swift */; };
 		62F1710525743C17000C8557 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62F1710425743C17000C8557 /* ProfileViewController.swift */; };
@@ -79,6 +81,8 @@
 		62AF034F2564476400535D3B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		62E6A4C6257E8BD900B14E19 /* RecipeDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeDetailsViewController.swift; sourceTree = "<group>"; };
 		62E6A4CB257E9C5B00B14E19 /* DetailsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsTableViewCell.swift; sourceTree = "<group>"; };
+		62E6A4D0257EAAB500B14E19 /* SuggestionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuggestionTableViewCell.swift; sourceTree = "<group>"; };
+		62E6A4D5257EAC7E00B14E19 /* SuggestionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuggestionsViewController.swift; sourceTree = "<group>"; };
 		62F170F7257428AB000C8557 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		62F170FF25742F2E000C8557 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		62F1710425743C17000C8557 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
@@ -162,6 +166,8 @@
 				6214C7C7257BE32C00763FE5 /* PreviewTableViewCell.swift */,
 				62E6A4C6257E8BD900B14E19 /* RecipeDetailsViewController.swift */,
 				62E6A4CB257E9C5B00B14E19 /* DetailsTableViewCell.swift */,
+				62E6A4D0257EAAB500B14E19 /* SuggestionTableViewCell.swift */,
+				62E6A4D5257EAC7E00B14E19 /* SuggestionsViewController.swift */,
 			);
 			path = "Taste-Buds";
 			sourceTree = "<group>";
@@ -456,8 +462,10 @@
 				6214C7C8257BE32C00763FE5 /* PreviewTableViewCell.swift in Sources */,
 				6268860B2577FCB5007616AD /* SubmitViewController.swift in Sources */,
 				62F170F8257428AB000C8557 /* SignUpViewController.swift in Sources */,
+				62E6A4D1257EAAB500B14E19 /* SuggestionTableViewCell.swift in Sources */,
 				6272AE6325771A8D00DB0185 /* PostedIngredientTableViewCell.swift in Sources */,
 				6268862625782422007616AD /* FeedViewController.swift in Sources */,
+				62E6A4D6257EAC7E00B14E19 /* SuggestionsViewController.swift in Sources */,
 				62E6A4C7257E8BD900B14E19 /* RecipeDetailsViewController.swift in Sources */,
 				62E6A4CC257E9C5B00B14E19 /* DetailsTableViewCell.swift in Sources */,
 				62AF032E2564476200535D3B /* SceneDelegate.swift in Sources */,

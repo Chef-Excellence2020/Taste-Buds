@@ -44,9 +44,10 @@ A recipe app that focuses on collaborative creation. Users can suggest alternati
 - [x] User can log out.
 - [x] User stays logged in across restarts.
 - [ ] User can log in with Google account.
-- [ ] User can post recipes.
-- [ ] User can edit profile.
-- [ ] User can view other recipes and profiles.
+- [x] User can post recipes.
+- [x] User can edit profile.
+- [x] User can view other recipes
+- [ ] User can view other profiles
 
 ### 2. Screen Archetypes
 * Login / Register

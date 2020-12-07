@@ -190,4 +190,9 @@ GIF created with [ezgif](https://ezgif.com/).
 
 <img src="https://github.com/Chef-Excellence2020/Taste-Buds/blob/main/Assets/login.gif" width=200>
 
+## Week 3
+
+<img src="https://github.com/Chef-Excellence2020/Taste-Buds/blob/main/Assets/week3.gif" width=200>
+
+
 GIFs created with [Recordit](https://recordit.co/).

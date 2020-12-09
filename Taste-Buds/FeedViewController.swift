@@ -58,13 +58,15 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        let cell = sender as! UITableViewCell
-        let indexPath = tableView.indexPath(for: cell)!
-        let post = posts[indexPath.row]
-    
-        //Pass selected movie to details page
-        let recipeDetailsViewController = segue.destination as! RecipeDetailsViewController
-        recipeDetailsViewController.post = post
+        //fixes bug where trying to create a recipe from would crash
+        //This segue can only be sent to the recipe details viewcontroller
+        if (segue.identifier == "toDetail") {
+            let cell = sender as! UITableViewCell
+            let indexPath = tableView.indexPath(for: cell)!
+            let post = posts[indexPath.row]
+            let recipeDetailsViewController = segue.destination as! RecipeDetailsViewController
+            recipeDetailsViewController.post = post
+        }
     }
     
 

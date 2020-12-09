@@ -44,7 +44,7 @@ class SuggestionsViewController: UIViewController, UITableViewDelegate, UITableV
     let ingredientInputBar = MessageInputBar()
     var showInputBar = false
     var suggestions_dict = [String: Array<Any>]()
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
         print(suggestions_dict)
@@ -58,7 +58,7 @@ class SuggestionsViewController: UIViewController, UITableViewDelegate, UITableV
         tableView.keyboardDismissMode = .interactive
         let center = NotificationCenter.default
         center.addObserver(self, selector: #selector(keyboardWillBeHidden(note:)), name: UIResponder.keyboardWillHideNotification, object: nil)
-
+        tableView.reloadData()
         // Do any additional setup after loading the view.
     }
     func messageInputBar(_ inputBar: MessageInputBar, didPressSendButtonWith text: String) {

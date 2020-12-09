@@ -209,7 +209,7 @@
                                             <outlet property="dishName" destination="oyN-up-mK6" id="Nhs-ZZ-oGJ"/>
                                             <outlet property="saves" destination="WJh-s9-1c0" id="xSJ-hv-fxh"/>
                                             <outlet property="username" destination="gmA-8A-NT1" id="bIS-5K-iAy"/>
-                                            <segue destination="mTp-dy-39V" kind="show" id="Q1X-de-CHF"/>
+                                            <segue destination="mTp-dy-39V" kind="show" identifier="toDetail" id="Q1X-de-CHF"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -221,7 +221,7 @@
                     <navigationItem key="navigationItem" title="Home" id="na2-Pv-n1A">
                         <barButtonItem key="rightBarButtonItem" title="Create" id="W6T-qx-KlP">
                             <connections>
-                                <segue destination="Odf-SC-TjW" kind="show" id="0QG-h4-MEc"/>
+                                <segue destination="Odf-SC-TjW" kind="show" identifier="toCreate" id="0QG-h4-MEc"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -784,14 +784,14 @@
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="AddSuggestionCell" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="AddSuggestionCell" id="hru-6Y-iy6">
-                                        <rect key="frame" x="0.0" y="71.5" width="414" height="44"/>
+                                        <rect key="frame" x="0.0" y="71.5" width="414" height="43.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="hru-6Y-iy6" id="gIh-ha-Jr8">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="+ Suggestion" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qKM-Tu-Pgn">
-                                                    <rect key="frame" x="157" y="11" width="101" height="21.5"/>
+                                                    <rect key="frame" x="157" y="11" width="101" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>

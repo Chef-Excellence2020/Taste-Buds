@@ -101,24 +101,46 @@ class RecipeDetailsViewController: UIViewController, UITableViewDelegate, UITabl
         // Do any additional setup after loading the view.
     }
     
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+//override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         //Pass ingredients and directions to submit page
         //if suggestions_dict[key] != nil{
             //print(suggestions_dict[key] //as! NSArray)
             //let DetailArray = //suggestions_dict[key] //as! Array<Any>
-        if DetailArray.isEmpty {
-            print("you have unwrapped an empty array, congrats")
-            let suggestionsViewController = segue.destination as! SuggestionsViewController
-            suggestionsViewController.suggestionsArray = DetailArray
-            suggestionsViewController.key = key
-        }else{
-            let suggestionsViewController = segue.destination as! SuggestionsViewController
-            suggestionsViewController.suggestionsArray = DetailArray
-            suggestionsViewController.key = key
-        suggestionsViewController.suggestions_dict = post["suggestions"] as! [String : Array<Any>]
-        }
-        }
+//if DetailArray.isEmpty {
+//            print("you have unwrapped an empty array, congrats")
+  //          let suggestionsViewController = segue.destination as! SuggestionsViewController
+    //        suggestionsViewController.suggestionsArray = DetailArray
+      //      suggestionsViewController.key = key
+//        }else{
+  //          let suggestionsViewController = segue.destination as! SuggestionsViewController
+    //        suggestionsViewController.suggestionsArray = DetailArray
+      //      suggestionsViewController.key = key
+       // suggestionsViewController.suggestions_dict = post["suggestions"] as! [String : Array<Any>]
+        //    suggestionsViewController.objectID = post.objectId!
+       // }
+      //  } //
+    
+    //override func performSegue(withIdentifier "StupidAppleNonsense": String, sender: Any?) {
+      //  SuggestionsViewController.suggestionsArray = DetailArray
+     //   suggestionsViewController.key = key
+   // suggestionsViewController.suggestions_dict = post["suggestions"] as! [String : Array<Any>]
+     //   suggestionsViewController.objectID = post.objectId!
+   // }
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+            if (segue.identifier == "sad") {
+                DispatchQueue.main.async {
+                    let suggestionsViewController = segue.destination as! SuggestionsViewController
+                    suggestionsViewController.suggestionsArray = self.DetailArray
+                    suggestionsViewController.key = self.key
+                    suggestionsViewController.suggestions_dict = self.post["suggestions"] as! [String : Array<Any>]
+                    suggestionsViewController.objectID = self.post.objectId!
+                }
+          }
+    }
 
+    
+    //StupidAppleNonsense
+    
         //suggestionsViewController.suggestionsArray = ""
     /*
     // MARK: - Navigation

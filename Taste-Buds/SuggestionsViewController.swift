@@ -44,12 +44,14 @@ class SuggestionsViewController: UIViewController, UITableViewDelegate, UITableV
     let ingredientInputBar = MessageInputBar()
     var showInputBar = false
     var suggestions_dict = [String: Array<Any>]()
+    
 
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        print(suggestions_dict)
         tableView.dataSource = self
         tableView.delegate = self
+        print(suggestions_dict)
         print(suggestionsArray)
         ingredientInputBar.inputTextView.placeholder = "+ Suggestion"
         ingredientInputBar.sendButton.title = "Add"
@@ -74,7 +76,7 @@ class SuggestionsViewController: UIViewController, UITableViewDelegate, UITableV
         print(suggestions_dict)
         let query = PFQuery(className:"Post")
 
-        query.getObjectInBackground(withId: "uK2JtYoUsr") {
+        query.getObjectInBackground(withId: objectID) {
             (object, error) -> Void in
             if error != nil {
                 print("error")

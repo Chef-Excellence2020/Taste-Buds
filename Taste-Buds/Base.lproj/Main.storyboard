@@ -908,7 +908,7 @@
                                         </tableViewCellContentView>
                                         <connections>
                                             <outlet property="recipeDetails" destination="vwU-kQ-Q0O" id="F1K-KI-ngL"/>
-                                            <segue destination="QN0-Ir-I5h" kind="presentation" id="fsY-Dr-QBl"/>
+                                            <segue destination="QN0-Ir-I5h" kind="presentation" identifier="sad" id="h1U-hZ-KMa"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>

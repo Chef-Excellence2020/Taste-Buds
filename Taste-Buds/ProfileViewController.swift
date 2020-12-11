@@ -9,15 +9,53 @@ import UIKit
 import Parse
 import AlamofireImage
 
-class ProfileViewController: UIViewController, UIImagePickerControllerDelegate & UINavigationControllerDelegate {
+class ProfileViewController: UIViewController, UIImagePickerControllerDelegate, UICollectionViewDelegate, UINavigationControllerDelegate, UICollectionViewDataSource  {
+    
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return posts.count
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let post = posts[indexPath.item]
+        let cell = authoredDishes.dequeueReusableCell(withReuseIdentifier: "ProfileCollectionViewCell", for: indexPath) as! ProfileCollectionViewCell
+        let imageFile = post["photo"] as! PFFileObject
+        let urlString = imageFile.url!
+        let url = URL(string: urlString)!
+        cell.dishImage.af.setImage(withURL: url)
+        return cell
+    }
+    
     
     @IBOutlet weak var username: UILabel!
     
+    @IBOutlet weak var authoredDishes: UICollectionView!
     
     @IBOutlet weak var ProfilePic: UIImageView!
     
+    var posts = [PFObject]()
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        let query = PFQuery(className:"Post")
+        query.includeKeys(["author","ingredients","servings","cook","name","prep","directions","description","photo"])
+        query.whereKey("author", equalTo: PFUser.current()!)
+        query.order(byDescending:"createdAt")
+        query.limit = 50
+        query.findObjectsInBackground(){ (posts,error) in if posts != nil {
+            self.posts = posts!
+            self.authoredDishes.reloadData()
+            print(posts ?? "sad")
+        }else{
+            print("boo")
+        }
+            
+        }
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        authoredDishes.delegate = self
+        authoredDishes.dataSource = self
         let user = PFUser.current()
         username.text = user?.username
         //set profile pic from database
@@ -27,6 +65,18 @@ class ProfileViewController: UIViewController, UIImagePickerControllerDelegate &
         ProfilePic.af.setImage(withURL: url)
         ProfilePic.layer.cornerRadius = 75
         // Do any additional setup after loading the view.
+        
+        //layout
+        var screenSize: CGRect!
+        var screenWidth: CGFloat!
+        screenSize = UIScreen.main.bounds
+        screenWidth = screenSize.width
+        let layout: UICollectionViewFlowLayout = UICollectionViewFlowLayout()
+        layout.sectionInset = UIEdgeInsets(top: 20, left: 0, bottom: 10, right: 0)
+        layout.itemSize = CGSize(width: screenWidth/3, height: screenWidth/3)
+        layout.minimumInteritemSpacing = 0
+        layout.minimumLineSpacing = 0
+        authoredDishes!.collectionViewLayout = layout
     }
     
     @IBAction func onChangeProfilePic(_ sender: Any) {
@@ -105,6 +155,18 @@ class ProfileViewController: UIViewController, UIImagePickerControllerDelegate &
         let loginViewController = main.instantiateViewController(withIdentifier: "LoginViewController")
         let sceneDelegate = self.view.window?.windowScene?.delegate as! SceneDelegate
         sceneDelegate.window?.rootViewController = loginViewController
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        //fixes bug where trying to create a recipe from would crash
+        //This segue can only be sent to the recipe details viewcontroller
+        if (segue.identifier == "ProfiletoDetail") {
+            let cell = sender as! UICollectionViewCell
+            let indexPath = authoredDishes.indexPath(for: cell)!
+            let post = posts[indexPath.item]
+            let recipeDetailsViewController = segue.destination as! RecipeDetailsViewController
+            recipeDetailsViewController.post = post
+        }
     }
     
     /*

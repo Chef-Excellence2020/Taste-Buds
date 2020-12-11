@@ -30,19 +30,38 @@ class RecipeDetailsViewController: UIViewController, UITableViewDelegate, UITabl
         if indexPath.row == 0 {
             let cell = tableView.dequeueReusableCell(withIdentifier: "DetailsTableViewCell") as! DetailsTableViewCell
             cell.recipeDetails.text = "Ingredients:"
+            //wanted color / 255 for some reason :/
+            cell.recipeDetails.textColor = UIColor(red: 0.843, green: 0.149, blue: 0.230, alpha: 1.0)
+            cell.isUserInteractionEnabled = false
             return cell
         } else if indexPath.row == ingredientsList.count + 1 {
             let cell = tableView.dequeueReusableCell(withIdentifier: "DetailsTableViewCell") as! DetailsTableViewCell
             cell.recipeDetails.text = "Directions:"
+            cell.recipeDetails.textColor = UIColor(red: 0.843, green: 0.149, blue: 0.230, alpha: 1.0)
+            cell.isUserInteractionEnabled = false
             return cell
         } else if indexPath.row <= ingredientsList.count {
             let cell = tableView.dequeueReusableCell(withIdentifier: "DetailsTableViewCell") as! DetailsTableViewCell
             cell.recipeDetails.text = (ingredientsList[indexPath.row - 1] as! String)
+            let suggestions_dict = post["suggestions"] as! NSDictionary
+            key = cell.recipeDetails.text!
+            print(key)
+            DetailArray = suggestions_dict[key] as! Array<Any>
+            if DetailArray.isEmpty == false {
+                cell.egg.isHidden = false
+            }
             return cell
         }
         else if indexPath.row <= ingredientsList.count + directionsList.count + 1 {
             let cell = tableView.dequeueReusableCell(withIdentifier: "DetailsTableViewCell") as! DetailsTableViewCell
             cell.recipeDetails.text = (directionsList[count] as! String)
+            let suggestions_dict = post["suggestions"] as! NSDictionary
+            key = cell.recipeDetails.text!
+            print(key)
+            DetailArray = suggestions_dict[key] as! Array<Any>
+            if DetailArray.isEmpty == false {
+                cell.egg.isHidden = false
+            }
             count += 1
                 return cell }
         else{
@@ -70,8 +89,7 @@ class RecipeDetailsViewController: UIViewController, UITableViewDelegate, UITabl
     @IBOutlet weak var tableView: UITableView!
     
     @IBOutlet weak var totalTime: UILabel!
-    
-    
+        
     var post = PFObject(className: "post")
     var count = 0
     var key = ""
@@ -90,15 +108,18 @@ class RecipeDetailsViewController: UIViewController, UITableViewDelegate, UITabl
         UserImage.af.setImage(withURL: url)
         UserName.text = user.username
         Servings.text = "Servings: " + (post["servings"] as! String)
-        prep.text = "Prep Time: " + (post["prep"] as! String)
-        cook.text = "Cook Time: " + (post["cook"] as! String)
-        totalTime.text = "Total Time: " + String((Int(post["prep"] as! String)! + Int(post["cook"] as! String)!))
+        prep.text = "Prep Time: " + (post["prep"] as! String) + " minutes"
+        cook.text = "Cook Time: " + (post["cook"] as! String) + " minutes"
+        totalTime.text = "Total Time: " + String((Int(post["prep"] as! String)! + Int(post["cook"] as! String)!)) + " minutes"
         DishName.text = (post["name"] as! String)
         let imageFile2 = post["photo"] as! PFFileObject
         let urlString2 = imageFile2.url!
         let url2 = URL(string: urlString2)!
         DishPic.af.setImage(withURL: url2)
         // Do any additional setup after loading the view.
+        
+        //userpic format
+        UserImage.layer.cornerRadius = 30
     }
     
 //override func prepare(for segue: UIStoryboardSegue, sender: Any?) {

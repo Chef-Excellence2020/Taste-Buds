@@ -11,6 +11,8 @@ class DetailsTableViewCell: UITableViewCell {
     
     @IBOutlet weak var recipeDetails: UILabel!
     
+    @IBOutlet weak var egg: UIImageView!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

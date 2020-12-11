@@ -91,9 +91,9 @@ class SubmitViewController: UIViewController, UITableViewDelegate, UITableViewDa
         userImage.af.setImage(withURL: url)
         userName.text = user?.username
         PreviewServings.text = "Servings: " + servings
-        PreviewPrep.text = "Prep Time: " + prep
-        PreviewCook.text = "Cook Time: " + cook
-        PreviewTotal.text = "Total Time: " + String((Int(prep)! + Int(cook)!))
+        PreviewPrep.text = "Prep Time: " + prep + " minutes"
+        PreviewCook.text = "Cook Time: " + cook + " minutes"
+        PreviewTotal.text = "Total Time: " + String((Int(prep)! + Int(cook)!)) + " minutes"
         PreviewName.text = name
         PreviewPic.image = photo
     }

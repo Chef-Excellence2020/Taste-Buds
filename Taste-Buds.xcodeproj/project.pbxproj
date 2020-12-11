@@ -36,6 +36,9 @@
 		62F1710525743C17000C8557 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62F1710425743C17000C8557 /* ProfileViewController.swift */; };
 		D66BE8E90A963B7BAD68F610 /* Pods_Taste_Buds_Taste_BudsUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF53DF169D904BCD58C5D988 /* Pods_Taste_Buds_Taste_BudsUITests.framework */; };
 		DC19CFF4E97E21FE27F3ACEA /* Pods_Taste_Buds.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBEA8583F939ED2EC82E0B38 /* Pods_Taste_Buds.framework */; };
+		E0F4BBEB25840642008EECF0 /* Righteous-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E0F4BBEA25840642008EECF0 /* Righteous-Regular.ttf */; };
+		E0F4BBEC25840642008EECF0 /* Righteous-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E0F4BBEA25840642008EECF0 /* Righteous-Regular.ttf */; };
+		E0F4BBED25840642008EECF0 /* Righteous-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E0F4BBEA25840642008EECF0 /* Righteous-Regular.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -96,6 +99,7 @@
 		BF53DF169D904BCD58C5D988 /* Pods_Taste_Buds_Taste_BudsUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Taste_Buds_Taste_BudsUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CBCE94FE080B126FA522363F /* Pods-Taste-Buds-Taste-BudsUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Taste-Buds-Taste-BudsUITests.release.xcconfig"; path = "Target Support Files/Pods-Taste-Buds-Taste-BudsUITests/Pods-Taste-Buds-Taste-BudsUITests.release.xcconfig"; sourceTree = "<group>"; };
 		CBEA8583F939ED2EC82E0B38 /* Pods_Taste_Buds.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Taste_Buds.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E0F4BBEA25840642008EECF0 /* Righteous-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Righteous-Regular.ttf"; path = "../../../../Downloads/Righteous/Righteous-Regular.ttf"; sourceTree = "<group>"; };
 		EA5C1B5C07043CBA384C1658 /* Pods-Taste-Buds.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Taste-Buds.debug.xcconfig"; path = "Target Support Files/Pods-Taste-Buds/Pods-Taste-Buds.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -152,6 +156,7 @@
 		62AF032A2564476200535D3B /* Taste-Buds */ = {
 			isa = PBXGroup;
 			children = (
+				E0F4BBE925840601008EECF0 /* fonts */,
 				62AF032B2564476200535D3B /* AppDelegate.swift */,
 				62AF032D2564476200535D3B /* SceneDelegate.swift */,
 				62F170FF25742F2E000C8557 /* LoginViewController.swift */,
@@ -220,6 +225,14 @@
 				2B119FA2781240A71F7BA111 /* Pods_Taste_BudsTests.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E0F4BBE925840601008EECF0 /* fonts */ = {
+			isa = PBXGroup;
+			children = (
+				E0F4BBEA25840642008EECF0 /* Righteous-Regular.ttf */,
+			);
+			path = fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -332,6 +345,7 @@
 			files = (
 				62AF03382564476300535D3B /* LaunchScreen.storyboard in Resources */,
 				62AF03352564476300535D3B /* Assets.xcassets in Resources */,
+				E0F4BBEB25840642008EECF0 /* Righteous-Regular.ttf in Resources */,
 				62AF03332564476200535D3B /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -340,6 +354,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E0F4BBEC25840642008EECF0 /* Righteous-Regular.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -347,6 +362,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E0F4BBED25840642008EECF0 /* Righteous-Regular.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

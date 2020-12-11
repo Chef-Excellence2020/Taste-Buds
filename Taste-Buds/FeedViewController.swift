@@ -20,6 +20,7 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
         let cell = tableView.dequeueReusableCell(withIdentifier: "HomeTableViewCell") as! HomeTableViewCell
         let user = post["author"] as! PFUser
         cell.username.text = user.username
+        cell.username.textColor = UIColor(red: 0.843, green: 0.149, blue: 0.230, alpha: 1.0)
         cell.dishName.text = (post["name"] as! String)
         cell.dishDescription.text = (post["description"] as! String)
         let imageFile = post["photo"] as! PFFileObject
@@ -55,7 +56,27 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
         tableView.delegate = self
         tableView.dataSource = self
         // Do any additional setup after loading the view.
+        addNavBarImage()
     }
+    
+    func addNavBarImage() {
+
+            let navController = navigationController!
+
+            let image = UIImage(named: "TastBudsLogo")
+            let imageView = UIImageView(image: image)
+
+            let bannerWidth = navController.navigationBar.frame.size.width
+            let bannerHeight = navController.navigationBar.frame.size.height
+
+            let bannerX = (bannerWidth / 2 - (image?.size.width)! / 2) / 4
+            let bannerY = (bannerHeight / 2 - (image?.size.height)! / 2) / 4
+
+            imageView.frame = CGRect(x: bannerX, y: bannerY, width: bannerWidth, height: bannerHeight)
+        imageView.contentMode = .scaleAspectFit
+
+            navigationItem.titleView = imageView
+        }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         //fixes bug where trying to create a recipe from would crash

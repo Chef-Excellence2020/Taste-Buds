@@ -77,7 +77,27 @@ class ProfileViewController: UIViewController, UIImagePickerControllerDelegate, 
         layout.minimumInteritemSpacing = 0
         layout.minimumLineSpacing = 0
         authoredDishes!.collectionViewLayout = layout
+        addNavBarImage()
     }
+    
+    func addNavBarImage() {
+
+            let navController = navigationController!
+
+            let image = UIImage(named: "TastBudsLogo")
+            let imageView = UIImageView(image: image)
+
+            let bannerWidth = navController.navigationBar.frame.size.width
+            let bannerHeight = navController.navigationBar.frame.size.height
+
+            let bannerX = (bannerWidth / 2 - (image?.size.width)! / 2) / 4
+            let bannerY = (bannerHeight / 2 - (image?.size.height)! / 2) / 4
+
+            imageView.frame = CGRect(x: bannerX, y: bannerY, width: bannerWidth, height: bannerHeight)
+        imageView.contentMode = .scaleAspectFit
+
+            navigationItem.titleView = imageView
+        }
     
     @IBAction func onChangeProfilePic(_ sender: Any) {
         let alert = UIAlertController(title: "Choose Image", message: nil, preferredStyle: .actionSheet)

@@ -96,7 +96,27 @@ class SubmitViewController: UIViewController, UITableViewDelegate, UITableViewDa
         PreviewTotal.text = "Total Time: " + String((Int(prep)! + Int(cook)!)) + " minutes"
         PreviewName.text = name
         PreviewPic.image = photo
+        addNavBarImage()
     }
+    
+    func addNavBarImage() {
+
+            let navController = navigationController!
+
+            let image = UIImage(named: "TastBudsLogo")
+            let imageView = UIImageView(image: image)
+
+            let bannerWidth = navController.navigationBar.frame.size.width
+            let bannerHeight = navController.navigationBar.frame.size.height
+
+            let bannerX = (bannerWidth / 2 - (image?.size.width)! / 2) / 4
+            let bannerY = (bannerHeight / 2 - (image?.size.height)! / 2) / 4
+
+            imageView.frame = CGRect(x: bannerX, y: bannerY, width: bannerWidth, height: bannerHeight)
+        imageView.contentMode = .scaleAspectFit
+
+            navigationItem.titleView = imageView
+        }
     
     @IBAction func onSubmit(_ sender: Any) {
         let imageData = photo.pngData()
@@ -119,7 +139,7 @@ class SubmitViewController: UIViewController, UITableViewDelegate, UITableViewDa
         post.saveInBackground{ (success, error) in if success{
             print("Saved!")
             self.dismiss(animated: true, completion: nil)
-            self.view.makeToast("Bone apple tea!", duration: 3.0, position: .center)
+            self.view.makeToast("Submitted!", duration: 3.0, position: .center)
         }else{
             print("Error!")
         }

@@ -59,6 +59,7 @@ class DirectionsViewController: UIViewController, UITableViewDelegate, UITableVi
     var cook = String()
     var servings = String()
     var description_dish = String()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         TableView.delegate = self
@@ -73,7 +74,26 @@ class DirectionsViewController: UIViewController, UITableViewDelegate, UITableVi
         // Do any additional setup after loading the view.
         let center = NotificationCenter.default
         center.addObserver(self, selector: #selector(keyboardWillBeHidden(note:)), name: UIResponder.keyboardWillHideNotification, object: nil)
+        addNavBarImage()
     }
+    func addNavBarImage() {
+
+            let navController = navigationController!
+
+            let image = UIImage(named: "TastBudsLogo")
+            let imageView = UIImageView(image: image)
+
+            let bannerWidth = navController.navigationBar.frame.size.width
+            let bannerHeight = navController.navigationBar.frame.size.height
+
+            let bannerX = (bannerWidth / 2 - (image?.size.width)! / 2) / 4
+            let bannerY = (bannerHeight / 2 - (image?.size.height)! / 2) / 4
+
+            imageView.frame = CGRect(x: bannerX, y: bannerY, width: bannerWidth, height: bannerHeight)
+        imageView.contentMode = .scaleAspectFit
+
+            navigationItem.titleView = imageView
+        }
     
     @objc func keyboardWillBeHidden(note: Notification){
         ingredientInputBar.inputTextView.text = nil

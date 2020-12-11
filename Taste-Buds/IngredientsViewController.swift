@@ -68,14 +68,11 @@ class IngredientsViewController: UIViewController, UITableViewDelegate, UITableV
     let ingredientInputBar = MessageInputBar()
     var showInputBar = false
     var ingredientsList = [String]()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         TableView.delegate = self
         TableView.dataSource = self
-        print(name)
-        print(prep)
-        print(cook)
-        print(servings)
         ingredientInputBar.inputTextView.placeholder = "Ingredient + amount"
         ingredientInputBar.sendButton.title = "Add"
         ingredientInputBar.delegate = self
@@ -85,7 +82,27 @@ class IngredientsViewController: UIViewController, UITableViewDelegate, UITableV
         // Do any additional setup after loading the view.
         let center = NotificationCenter.default
         center.addObserver(self, selector: #selector(keyboardWillBeHidden(note:)), name: UIResponder.keyboardWillHideNotification, object: nil)
+        addNavBarImage()
     }
+    
+    func addNavBarImage() {
+
+            let navController = navigationController!
+
+            let image = UIImage(named: "TastBudsLogo")
+            let imageView = UIImageView(image: image)
+
+            let bannerWidth = navController.navigationBar.frame.size.width
+            let bannerHeight = navController.navigationBar.frame.size.height
+
+            let bannerX = (bannerWidth / 2 - (image?.size.width)! / 2) / 4
+            let bannerY = (bannerHeight / 2 - (image?.size.height)! / 2) / 4
+
+            imageView.frame = CGRect(x: bannerX, y: bannerY, width: bannerWidth, height: bannerHeight)
+        imageView.contentMode = .scaleAspectFit
+
+            navigationItem.titleView = imageView
+        }
     
     @objc func keyboardWillBeHidden(note: Notification){
         ingredientInputBar.inputTextView.text = nil

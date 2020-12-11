@@ -120,7 +120,28 @@ class RecipeDetailsViewController: UIViewController, UITableViewDelegate, UITabl
         
         //userpic format
         UserImage.layer.cornerRadius = 30
+        
+        addNavBarImage()
     }
+    
+    func addNavBarImage() {
+
+            let navController = navigationController!
+
+            let image = UIImage(named: "TastBudsLogo")
+            let imageView = UIImageView(image: image)
+
+            let bannerWidth = navController.navigationBar.frame.size.width
+            let bannerHeight = navController.navigationBar.frame.size.height
+
+            let bannerX = (bannerWidth / 2 - (image?.size.width)! / 2) / 4
+            let bannerY = (bannerHeight / 2 - (image?.size.height)! / 2) / 4
+
+            imageView.frame = CGRect(x: bannerX, y: bannerY, width: bannerWidth, height: bannerHeight)
+        imageView.contentMode = .scaleAspectFit
+
+            navigationItem.titleView = imageView
+        }
     
 //override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         //Pass ingredients and directions to submit page

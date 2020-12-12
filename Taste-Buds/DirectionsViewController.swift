@@ -65,7 +65,7 @@ class DirectionsViewController: UIViewController, UITableViewDelegate, UITableVi
         TableView.delegate = self
         TableView.dataSource = self
         
-        ingredientInputBar.inputTextView.placeholder = "Ingredient + amount"
+        ingredientInputBar.inputTextView.placeholder = "Direction"
         ingredientInputBar.sendButton.title = "Add"
         ingredientInputBar.delegate = self
         

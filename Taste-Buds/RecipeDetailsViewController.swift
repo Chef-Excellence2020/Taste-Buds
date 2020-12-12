@@ -52,9 +52,9 @@ class RecipeDetailsViewController: UIViewController, UITableViewDelegate, UITabl
             }
             return cell
         }
-        else if indexPath.row <= ingredientsList.count + directionsList.count + 1 {
+        else if indexPath.row < ingredientsList.count + directionsList.count + 1{
             let cell = tableView.dequeueReusableCell(withIdentifier: "DetailsTableViewCell") as! DetailsTableViewCell
-            cell.recipeDetails.text = (directionsList[count] as! String)
+            cell.recipeDetails.text = (directionsList[indexPath.row - 2 - (ingredientsList.count - 1)] as! String)
             let suggestions_dict = post["suggestions"] as! NSDictionary
             key = cell.recipeDetails.text!
             print(key)

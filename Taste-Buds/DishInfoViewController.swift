@@ -24,7 +24,6 @@ class DishInfoViewController: UIViewController, UIImagePickerControllerDelegate 
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        photo.layer.cornerRadius = 60
         // Do any additional setup after loading the view.
     }
     
@@ -79,10 +78,9 @@ class DishInfoViewController: UIViewController, UIImagePickerControllerDelegate 
    }
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
         let image = info[.editedImage] as! UIImage
-        let size = CGSize(width: 150, height: 150)
+        let size = CGSize(width: 414, height: 200)
         let scaledimage = image.af.imageAspectScaled(toFill: size)
         photo.image = scaledimage
-        photo.layer.cornerRadius = 60
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {

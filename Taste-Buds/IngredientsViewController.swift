@@ -73,7 +73,7 @@ class IngredientsViewController: UIViewController, UITableViewDelegate, UITableV
         super.viewDidLoad()
         TableView.delegate = self
         TableView.dataSource = self
-        ingredientInputBar.inputTextView.placeholder = "Ingredient + amount"
+        ingredientInputBar.inputTextView.placeholder = "Amount + Ingredient"
         ingredientInputBar.sendButton.title = "Add"
         ingredientInputBar.delegate = self
         

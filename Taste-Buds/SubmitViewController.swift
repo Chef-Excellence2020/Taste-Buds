@@ -18,10 +18,12 @@ class SubmitViewController: UIViewController, UITableViewDelegate, UITableViewDa
         if indexPath.row == 0 {
             let cell = tableView.dequeueReusableCell(withIdentifier: "PreviewTableViewCell") as! PreviewTableViewCell
             cell.recipeDetails.text = "Ingredients:"
+            cell.recipeDetails.textColor = UIColor(red: 0.843, green: 0.149, blue: 0.230, alpha: 1.0)
             return cell
         } else if indexPath.row == ingredientsList.count + 1 {
             let cell = tableView.dequeueReusableCell(withIdentifier: "PreviewTableViewCell") as! PreviewTableViewCell
             cell.recipeDetails.text = "Directions:"
+            cell.recipeDetails.textColor = UIColor(red: 0.843, green: 0.149, blue: 0.230, alpha: 1.0)
             return cell
         } else if indexPath.row <= ingredientsList.count {
             let cell = tableView.dequeueReusableCell(withIdentifier: "PreviewTableViewCell") as! PreviewTableViewCell
@@ -89,6 +91,7 @@ class SubmitViewController: UIViewController, UITableViewDelegate, UITableViewDa
         let urlString = imageFile.url!
         let url = URL(string: urlString)!
         userImage.af.setImage(withURL: url)
+        userImage.layer.cornerRadius = 30
         userName.text = user?.username
         PreviewServings.text = "Servings: " + servings
         PreviewPrep.text = "Prep Time: " + prep + " minutes"

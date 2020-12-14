@@ -196,3 +196,17 @@ GIF created with [ezgif](https://ezgif.com/).
 
 
 GIFs created with [Recordit](https://recordit.co/).
+
+## Week 4
+
+###Viewing a recipe
+
+![](viewRecipe2.gif)
+
+###Creating a Recipe
+
+![](addingARecipe.gif)
+
+###Adding a Suggestion
+
+![](addSuggestion.gif)

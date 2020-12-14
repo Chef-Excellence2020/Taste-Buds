@@ -199,14 +199,14 @@ GIFs created with [Recordit](https://recordit.co/).
 
 ## Week 4
 
-###Viewing a recipe
+### Viewing a recipe
 
 ![](viewRecipe2.gif)
 
-###Creating a Recipe
+### Creating a Recipe
 
 ![](addingARecipe.gif)
 
-###Adding a Suggestion
+### Adding a Suggestion
 
 ![](addSuggestion.gif)

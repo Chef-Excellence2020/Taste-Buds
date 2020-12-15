@@ -201,12 +201,14 @@ GIFs created with [Recordit](https://recordit.co/).
 
 ### Viewing a recipe
 
-![](viewRecipe2.gif)
+<img src="viewRecipe2.gif" width=200>
 
 ### Creating a Recipe
 
-![](addingARecipe.gif)
+<img src="addingARecipe.gif" width=200>
+
 
 ### Adding a Suggestion
 
-![](addSuggestion.gif)
+<img src="addSuggestion.gif" width=200>
+
